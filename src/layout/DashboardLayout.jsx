@@ -1,4 +1,6 @@
 import React from 'react'
+
+import "./DashboardLayout.css";
 import BodyLayout from '../components/dashboard/BodyLayout'
 import Navbar from '../components/dashboard/Navbar'
 

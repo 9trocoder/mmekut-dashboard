@@ -1,8 +1,17 @@
 import React from 'react'
+import DashboardHeader from '../../components/dashboard/DashboardHeader'
 import DashboardLayout from '../../layout/DashboardLayout'
 
-const nav = <p>Hello nav</p>
-const bodyel = <p>Hello body</p>
+const dashboardheaderel = <div style={{display: "flex", justifyContent: "space-between"}}><p></p>
+<p></p>
+</div> 
+
+const nav = <p></p>
+const bodyel = <>
+  <div className="">
+    <DashboardHeader dashboardheaderel={dashboardheaderel} />
+  </div>
+</>
 
 
 function Homepage() {
