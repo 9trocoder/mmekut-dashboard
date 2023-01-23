@@ -1,0 +1,166 @@
+.task-manager {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.left-bar {
+  width: 297px;
+  border-right: 1px solid #e3e7f7;
+  position: relative;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.right-bar {
+  flex: 1.5;
+  border-left: 1px solid #e3e7f7;
+}
+
+/* Dashboard header */
+
+.homeheader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 18px 0 15px;
+  height: 50px;
+  border-bottom: 1px solid #e9ebf0;
+  justify-content: space-between;
+}
+
+.homeheader_title {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #464d57;
+}
+
+.homeheader_icontitle {
+  font-size: 12px;
+  line-height: 13px;
+  color: #2a2e34;
+}
+
+.homeheader_iconcnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #f7f8f9;
+  border-radius: 8px;
+  border: 1px solid #e8eaed;
+  padding: 0px 7px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* NavBar */
+.navbar {
+  width: 297px !important;
+  border-right: 1px solid #e9ebf0;
+}
+
+.navbar__header {
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbar__header img {
+  width: 45px;
+  height: 45px;
+}
+
+.nhcp1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 2px;
+}
+
+.nhcp2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+
+  color: #7b7b7b;
+}
+
+.task-wrapper {
+ padding: 30px 30px;
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.task-wrappertitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #292d34;
+}
+
+.importanttask-cnt {
+  height: 52px;
+  background-color: #fff;
+  padding: 7px 8px;
+  border: 1px dashed #e8eaed;
+  margin-top: 15px;
+}
+
+.importanttask-btn {
+  cursor: pointer;
+  background: #f2faff;
+  border-radius: 6px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.importanttask-btn label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.4px;
+    color:#2a2e34;
+    cursor: pointer;
+}
+
+.task-wrapper-item {
+    margin-bottom: 60px;
+}
+
+.task-wrapper-myspace {
+    margin-top: 20px;
+    border-bottom: 1px solid #e3e7f7;
+}
+
+.task-wrapper-myspace button {
+    margin-right: 24px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px 0px;
+    text-align: center;
+    color: #292d34;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.task-wrapper-myspace button:focus {
+    border-bottom: 4px solid rgba(1, 132, 251, 0.15);
+}
