@@ -68,23 +68,24 @@
 }
 
 .navbar__header {
+  height: 50px;
   width: 100%;
-  padding: 15px 20px;
+  padding: 0px 18px 0px 15px;
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
 .navbar__header img {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 }
 
 .nhcp1 {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 13px;
+  line-height: 13px;
   margin-bottom: 2px;
 }
 
@@ -92,7 +93,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 13px;
+  line-height: 12px;
 
   color: #7b7b7b;
 }
@@ -163,4 +164,103 @@
 
 .task-wrapper-myspace button:focus {
     border-bottom: 4px solid rgba(1, 132, 251, 0.15);
+}
+
+.taskwrapper-myspace-item {
+  cursor: pointer;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.taskwrapper-myspace-item label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.taskwrapper-myspacetask-cnt {
+  margin-top: 20px;
+  border: 1px solid #e3e7f7;
+  border-radius: 8px;
+}
+
+
+
+.tmstc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px;
+  border-bottom: 1px dashed #e3e7f7;
+}
+
+.twmcc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px;
+}
+
+.tmstc-tlp1, .twmcc-tlp1 {
+  font-size: 13.5px;
+  line-height: 13.5px;
+  margin-bottom: 8px;
+}
+
+.twmcc-tlp1 {
+  color:#9a9fbf;
+}
+
+.tmstc-tlp2, .twmcc-tlp2 {
+  font-size: 11px;
+  color: #656f7d;
+  line-height: 11px;
+}
+
+.twmcc-tlp2 {
+  color: #9a9fbf;
+}
+
+.tmstc-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px;
+}
+
+.tmstc-bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tmstc-bottom-left label {
+  font-size: 13px;
+  color: #2a2e34;
+}
+
+.tmstc-bottom img {
+  width: 30px;
+  height: 30px;
+}
+
+/* .tmioverdue {
+  margin-top: 60px;
+} */
+
+.taskwrapper-myspaceoverdue-cnt {
+  margin-top: 20px;
+  border: 1px solid #e3e7f7;
+  border-radius: 8px;
+  height: 195px;
+}
+
+.taskwrapper-myspacecompleted-cnt {
+  border: 1px solid #e3e7f7;
+  margin-top: 20px;
+  border-radius: 8px;
 }

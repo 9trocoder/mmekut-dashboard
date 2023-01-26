@@ -1,10 +1,13 @@
 import React from "react";
 import {
-  addIconNotActive,
   addIconSmall,
+  arrowdowngray,
   calendarIconSmall,
+  clockIcon,
+  otherIconTask,
 } from "../Utils/tools";
 import p2img from "../assets/images/p2.png";
+import p1img from "../assets/images/p1.png";
 import "./Homepage.css";
 
 function Homepage() {
@@ -46,6 +49,44 @@ function Homepage() {
               <button>In Progress</button>
               <button>Review</button>
               <button>Completed</button>
+            </div>
+            <div className="taskwrapper-myspace-item">
+              {arrowdowngray}
+              <label>Today Task</label>
+            </div>
+            <div className="taskwrapper-myspacetask-cnt">
+              <div className="tmstc-top">
+                <div className="tmstc-top-left">
+                  <p className="tmstc-tlp1">Work on the user settings page</p>
+                  <p className="tmstc-tlp2">Ushy Dashboard</p>
+                </div>
+                <div className="tmstc-top-right">{otherIconTask}</div>
+              </div>
+              <div className="tmstc-bottom">
+                <div className="tmstc-bottom-left">
+                  {clockIcon}
+                  <label>1:00 PM - 2:30 PM</label>
+                </div>
+                <img src={p1img} alt="" />
+              </div>
+            </div>
+            <div className="taskwrapper-myspace-item tmioverdue">
+              {arrowdowngray}
+              <label>Overdue</label>
+            </div>
+            <div className="taskwrapper-myspaceoverdue-cnt"></div>
+            <div className="taskwrapper-myspace-item">
+              {arrowdowngray}
+              <label>Completed</label>
+            </div>
+            <div className="taskwrapper-myspacecompleted-cnt">
+              <div className="twmcc-top">
+                <div className="twmcc-top-left">
+                  <p className="twmcc-tlp1">Work on the user settings page</p>
+                  <p className="twmcc-tlp2">Ushy Dashboard</p>
+                </div>
+                <div className="twmcc-top-right">{otherIconTask}</div>
+              </div>
             </div>
           </div>
         </div>
