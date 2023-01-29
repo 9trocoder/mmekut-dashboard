@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   addIconSmall,
   arrowdowngray,
   calendarIconSmall,
   chatNotActive,
   clockIcon,
+  closeIcon,
   doneIcon,
   moreIcon,
   otherIconTask,
@@ -19,7 +20,9 @@ import p3img from "../assets/images/p3.png";
 import "./Homepage.css";
 
 function Homepage() {
+  const [alternatetab, setAlternatetab] = useState(false);
   const peoplelist = [p2img, p1img, p3img];
+
   const addTaskIcon = (
     <svg
       width="13"
@@ -149,15 +152,17 @@ function Homepage() {
               <label>MARK AS COMPLETE</label>
             </div>
 
-            <div className="hmthldate">
+            {/* <div className="hmthldate">
               {taskCalendarIcon}
               <label>25 days left, Jan 4, 21:52</label>
-            </div>
+            </div> */}
           </div>
 
           <div className="hometaskheader-right">
-            <div className="">{chatNotActive}</div>
-            
+            <div className="" style={{cursor: "pointer"}} onClick={() => setAlternatetab(true)}>
+              {chatNotActive}
+            </div>
+
             {shareIcon}
             {moreIcon}
           </div>
@@ -207,10 +212,22 @@ function Homepage() {
           </div>
           <div className="taskwrapper-taskupload">
             {uploadIcon}
-            <label>Upload files here or <span>browse</span></label>
+            <label>
+              Upload files here or <span>browse</span>
+            </label>
           </div>
         </div>
       </div>
+
+      {alternatetab && (
+        <div className="alternate-bar alternate-bar_res">
+          <div className="alternatebarheader">
+            <div className="" style={{cursor: "pointer"}} onClick={() => setAlternatetab(false)}>{closeIcon}</div>
+
+            {moreIcon}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
