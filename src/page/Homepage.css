@@ -23,7 +23,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1.5;
   border-left: 1px solid #e3e7f7;
 }
 
