@@ -449,9 +449,9 @@
 
 .twtisubtaskcnt-check {
   border: 1px solid #e8eaed;
-  width: 25px;
-  height: 25px;
-  border-radius: 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
   cursor: pointer;
 }
 
