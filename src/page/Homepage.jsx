@@ -11,6 +11,7 @@ import {
   peopleAddIcon,
   shareIcon,
   taskCalendarIcon,
+  uploadIcon,
 } from "../Utils/tools";
 import p2img from "../assets/images/p2.png";
 import p1img from "../assets/images/p1.png";
@@ -203,6 +204,10 @@ function Homepage() {
                 {peopleAddIcon}
               </div>
             </div>
+          </div>
+          <div className="taskwrapper-taskupload">
+            {uploadIcon}
+            <label>Upload files here or <span>browse</span></label>
           </div>
         </div>
       </div>

@@ -458,6 +458,34 @@
   color: #9a9fbf;
 }
 
+.taskwrapper-taskupload {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff;
+  gap: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.taskwrapper-taskupload label {
+  font-size: 13.5px;
+  line-height: 13.5px;
+  color: #9a9fbf;
+  font-style: italic;
+}
+
+.taskwrapper-taskupload label span {
+  text-decoration: underline;
+  padding-left: 10px;
+  cursor: pointer;
+  color: #0184FB;
+}
+
 @media screen and (max-width: 1440px) {
   .left-bar {
     max-width: 70px;
