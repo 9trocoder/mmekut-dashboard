@@ -11,7 +11,6 @@ import {
   otherIconTask,
   peopleAddIcon,
   shareIcon,
-  taskCalendarIcon,
   uploadIcon,
 } from "../Utils/tools";
 import p2img from "../assets/images/p2.png";
@@ -21,6 +20,7 @@ import "./Homepage.css";
 
 function Homepage() {
   const [alternatetab, setAlternatetab] = useState(false);
+  const [rightbartab, setRightbartab] = useState(false);
   const peoplelist = [p2img, p1img, p3img];
 
   const addTaskIcon = (
@@ -98,7 +98,7 @@ function Homepage() {
             </div>
             <div className="taskwrapper-myspacetask-cnt">
               <div className="tmstc-top">
-                <div className="tmstc-top-left">
+                <div className="tmstc-top-left" onClick={() => setRightbartab(true)}>
                   <p className="tmstc-tlp1">Work on the user settings page</p>
                   <p className="tmstc-tlp2">Ushy Dashboard</p>
                 </div>
@@ -133,10 +133,14 @@ function Homepage() {
           </div>
         </div>
       </div>
-      <div className="right-bar">
+      {!rightbartab && <div className="right-bartutor">
+          <p>Click on task title to view details</p>
+      </div>}
+      {rightbartab && <div className="right-bar right-bar_res">
         <div className="hometaskheader">
           <div className="hometaskheader-left">
             <div className="hometaskheader-left1">
+              <div className="rightbarclose" onClick={() => setRightbartab(false)}>{closeIcon}</div>
               {peoplelist.slice(0, 2).map((peoplelst, key) => (
                 <img
                   src={peoplelst}
@@ -217,7 +221,7 @@ function Homepage() {
             </label>
           </div>
         </div>
-      </div>
+      </div>}
 
       {alternatetab && (
         <div className="alternate-bar alternate-bar_res">
