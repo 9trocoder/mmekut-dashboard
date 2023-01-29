@@ -3,6 +3,7 @@ import {
   addIconSmall,
   arrowdowngray,
   calendarIconSmall,
+  chatNotActive,
   clockIcon,
   doneIcon,
   moreIcon,
@@ -154,6 +155,8 @@ function Homepage() {
           </div>
 
           <div className="hometaskheader-right">
+            <div className="">{chatNotActive}</div>
+            
             {shareIcon}
             {moreIcon}
           </div>
