@@ -20,8 +20,8 @@ function Homepage() {
   const peoplelist = [p2img, p1img, p3img];
   const addTaskIcon = (
     <svg
-      width="16"
-      height="16"
+      width="13"
+      height="13"
       viewBox="0 0 26 26"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +196,7 @@ function Homepage() {
               </p>
               <div className="twticheclist-cnt">
                 {addTaskIcon}
-                <p>Add a new Checklist</p>
+                <label>Add a new Checklist</label>
                 {peopleAddIcon}
               </div>
             </div>
