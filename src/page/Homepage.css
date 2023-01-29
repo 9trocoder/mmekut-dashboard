@@ -46,8 +46,6 @@
   border-left: 1px solid #e3e7f7;
 }
 
-
-
 /* Dashboard header */
 
 .homeheader {
@@ -404,7 +402,6 @@
   height: 157px;
 }
 
-
 .twtisubtask {
   margin-top: 50px;
 }
@@ -440,7 +437,7 @@
 .twtisubtaskcnt-left label {
   font-size: 11px;
   font-weight: 500;
-  color:#46f080;
+  color: #46f080;
 }
 
 .twtisubtaskcnt-right {
@@ -482,7 +479,7 @@
 .twtisubtask_listitem label {
   font-size: 13.5px;
   line-height: 13.5px;
-  color:#9a9fbf;
+  color: #9a9fbf;
 }
 
 .twticheclist-cnt label {
@@ -516,7 +513,7 @@
   text-decoration: underline;
   padding-left: 10px;
   cursor: pointer;
-  color: #0184FB;
+  color: #0184fb;
 }
 
 .rightbarclose {
@@ -562,13 +559,10 @@
   }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1080px) {
   .left-bar {
     max-width: 70px;
   }
-
- 
-
 
 
   .navbar__header-content {
@@ -576,15 +570,24 @@
   }
 
   .page-content {
-    flex: 1.5;
+    flex: 2;
   }
 
+  .right-bar {
+    flex: 2;
+  }
 
+  .right-bartutor {
+    flex: 2;
+  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .right-bar {
     display: none;
+  }
+  .right-bartutor {
+    flex: 1.5;
   }
   .rightbarclose {
     display: block;
@@ -600,14 +603,20 @@
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     z-index: 3;
-    width: 80vw;
     border-left: none;
   }
-  .right-bartutor {
-    display: none;
+
+  .twtisubtaskcnt-right {
+    margin-left: 20px;
   }
+  
 }
 
+@media screen and (max-width: 771px) {
+ .right-bartutor {
+  display: none;
+ }
+}
 
 @media screen and (max-width: 500px) {
   .right-bar_res {
