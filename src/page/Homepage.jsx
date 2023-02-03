@@ -17,6 +17,9 @@ import p2img from "../assets/images/p2.png";
 import p1img from "../assets/images/p1.png";
 import p3img from "../assets/images/p3.png";
 import "./Homepage.css";
+import sendIcon from "../assets/Svg/send.svg";
+import attachIcon from "../assets/Svg/chatadd.svg";
+import arrowrightIcon from "../assets/Svg/arrowright.svg";
 
 function Homepage() {
   const [alternatetab, setAlternatetab] = useState(false);
@@ -98,7 +101,10 @@ function Homepage() {
             </div>
             <div className="taskwrapper-myspacetask-cnt">
               <div className="tmstc-top">
-                <div className="tmstc-top-left" onClick={() => setRightbartab(true)}>
+                <div
+                  className="tmstc-top-left"
+                  onClick={() => setRightbartab(true)}
+                >
                   <p className="tmstc-tlp1">Work on the user settings page</p>
                   <p className="tmstc-tlp2">Ushy Dashboard</p>
                 </div>
@@ -133,102 +139,160 @@ function Homepage() {
           </div>
         </div>
       </div>
-      {!rightbartab && <div className="right-bartutor">
+      {!rightbartab && (
+        <div className="right-bartutor">
           <p>Click on task title to view details</p>
-      </div>}
-      {rightbartab && <div className="right-bar right-bar_res">
-        <div className="hometaskheader">
-          <div className="hometaskheader-left">
-            <div className="hometaskheader-left1">
-              <div className="rightbarclose" onClick={() => setRightbartab(false)}>{closeIcon}</div>
-              {peoplelist.slice(0, 2).map((peoplelst, key) => (
-                <img
-                  src={peoplelst}
-                  key={key}
-                  alt="img"
-                  className={`hmthlimg${key}`}
-                />
-              ))}
-              <div className="hmthlicon"> {peopleAddIcon}</div>
-            </div>
-            <div className="hmthldone">
-              {doneIcon}
-              <label>MARK AS COMPLETE</label>
-            </div>
+        </div>
+      )}
+      {rightbartab && (
+        <div className="right-bar right-bar_res">
+          <div className="hometaskheader">
+            <div className="hometaskheader-left">
+              <div className="hometaskheader-left1">
+                <div
+                  className="rightbarclose"
+                  onClick={() => setRightbartab(false)}
+                >
+                  {closeIcon}
+                </div>
+                {peoplelist.slice(0, 2).map((peoplelst, key) => (
+                  <img
+                    src={peoplelst}
+                    key={key}
+                    alt="img"
+                    className={`hmthlimg${key}`}
+                  />
+                ))}
+                <div className="hmthlicon"> {peopleAddIcon}</div>
+              </div>
+              <div className="hmthldone">
+                {doneIcon}
+                <label>MARK AS COMPLETE</label>
+              </div>
 
-            {/* <div className="hmthldate">
+              {/* <div className="hmthldate">
               {taskCalendarIcon}
               <label>25 days left, Jan 4, 21:52</label>
             </div> */}
-          </div>
-
-          <div className="hometaskheader-right">
-            <div className="" style={{cursor: "pointer"}} onClick={() => setAlternatetab(true)}>
-              {chatNotActive}
             </div>
 
-            {shareIcon}
-            {moreIcon}
-          </div>
-        </div>
-        <div className="taskwrapper-task">
-          <div className="taskwrapper-taskitem">
-            <p className="taskwrapper-title">Work on the user settings page</p>
-          </div>
-          <div className="taskwrapper-taskitem">
-            <textarea
-              placeholder="Description..."
-              className="twtitextarea"
-            ></textarea>
-          </div>
-          <div className="taskwrapper-taskitem">
-            <div className="twtisubtask">
-              <p className="twtisubtask-title">
-                Subtask <sup>(1)</sup>
-              </p>
-              <div className="twtisubtaskcnt">
-                <div className="twtisubtaskcnt-left">
-                  <img src={p3img} alt="" />
-                  <p>Add some things to the dashboard</p>
-                  <label>5 days left, Jan 4, 21:52</label>
-                </div>
-                <div className="twtisubtaskcnt-right">
-                  <div className="twtisubtaskcnt-check"></div>
-                </div>
+            <div className="hometaskheader-right">
+              <div
+                className=""
+                style={{ cursor: "pointer" }}
+                onClick={() => setAlternatetab(true)}
+              >
+                {chatNotActive}
               </div>
-              <div className="twtisubtask_listitem">
-                {doneTaskIcon}
-                <label>Create a new subtask</label>
-              </div>
+
+              {shareIcon}
+              {moreIcon}
             </div>
           </div>
-          <div className="taskwrapper-taskitem">
-            <div className="twtisubtask">
-              <p className="twtisubtask-title">
-                Checklist <sup>(0/0)</sup>
+          <div className="taskwrapper-task">
+            <div className="taskwrapper-taskitem">
+              <p className="taskwrapper-title">
+                Work on the user settings page
               </p>
-              <div className="twticheclist-cnt">
-                {addTaskIcon}
-                <label>Add a new Checklist</label>
-                {peopleAddIcon}
+            </div>
+            <div className="taskwrapper-taskitem">
+              <textarea
+                placeholder="Description..."
+                className="twtitextarea"
+              ></textarea>
+            </div>
+            <div className="taskwrapper-taskitem">
+              <div className="twtisubtask">
+                <p className="twtisubtask-title">
+                  Subtask <sup>(1)</sup>
+                </p>
+                <div className="twtisubtaskcnt">
+                  <div className="twtisubtaskcnt-left">
+                    <img src={p3img} alt="" />
+                    <p>Add some things to the dashboard</p>
+                    <label>5 days left, Jan 4, 21:52</label>
+                  </div>
+                  <div className="twtisubtaskcnt-right">
+                    <div className="twtisubtaskcnt-check"></div>
+                  </div>
+                </div>
+                <div className="twtisubtask_listitem">
+                  {doneTaskIcon}
+                  <label>Create a new subtask</label>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="taskwrapper-taskupload">
-            {uploadIcon}
-            <label>
-              Upload files here or <span>browse</span>
-            </label>
+            <div className="taskwrapper-taskitem">
+              <div className="twtisubtask">
+                <p className="twtisubtask-title">
+                  Checklist <sup>(0/0)</sup>
+                </p>
+                <div className="twticheclist-cnt">
+                  {addTaskIcon}
+                  <label>Add a new Checklist</label>
+                  {peopleAddIcon}
+                </div>
+              </div>
+            </div>
+            <div className="taskwrapper-taskupload">
+              {uploadIcon}
+              <label>
+                Upload files here or <span>browse</span>
+              </label>
+            </div>
           </div>
         </div>
-      </div>}
+      )}
 
       {alternatetab && (
         <div className="alternate-bar alternate-bar_res">
           <div className="alternatebarheader">
-            <div className="" style={{cursor: "pointer"}} onClick={() => setAlternatetab(false)}>{closeIcon}</div>
+            <div
+              className=""
+              style={{ cursor: "pointer" }}
+              onClick={() => setAlternatetab(false)}
+            >
+              {closeIcon}
+            </div>
 
             {moreIcon}
+          </div>
+          
+          <div className="alternatecomments">
+            <div className="alternatecommentsitem">
+              <img src={p2img} alt="" />
+              <div className="alternatecommentsitem-right">
+                <div className="acirtop">
+                  <label className="acirtopname">9trocoder</label>
+                  <label className="acirtoptime">11:44 AM</label>
+                </div>
+                <div className="acirbottom">
+                  <p className="acirbottommessage">Could you please notify me about the issues on the landing page, so that we could fix it together, he designed it, so he knows the outcome of it.</p>
+                </div>
+              </div>
+            </div>
+            <div className="alternatecommentsitem">
+              <img src={p3img} alt="" />
+              <div className="alternatecommentsitem-right">
+                <div className="acirtop">
+                  <label className="acirtopname">Amina</label>
+                  <label className="acirtoptime">6:18 PM</label>
+                </div>
+                <div className="acirbottom">
+                  <p className="acirbottommessage">The places that should have drop down options for the 'account preference' section don't have them</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="alternatebottom">
+            <div className="alternateattach">
+              <img src={attachIcon} alt="" />
+            </div>
+            <input type="text" placeholder="Comment or type a message..." />
+            <div className="alternatesend">
+              <img src={sendIcon} alt="" />
+            </div>
           </div>
         </div>
       )}
