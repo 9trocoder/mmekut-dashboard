@@ -249,6 +249,7 @@
 }
 
 .tmstc-top {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -306,6 +307,48 @@
 .tmstc-bottom img {
   width: 30px;
   height: 30px;
+}
+
+.tmstc-bottomoverlay {
+  position: fixed;
+  top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background-color: transparent; 
+z-index: 20;
+}
+
+.tmstc-topdropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: #ffff;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 8px;
+  padding: 0px 0px;
+  z-index: 21;
+}
+
+.tmstctditem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px;
+}
+
+.tmstctditem label {
+  font-size: 13.5px;
+  line-height: 13.5px;
+  cursor: pointer;
+}
+
+.tmstctditem {
+  cursor: pointer;
+}
+
+.tmstctditem:hover {
+  background-color: #f2faff;
 }
 
 /* .tmioverdue {

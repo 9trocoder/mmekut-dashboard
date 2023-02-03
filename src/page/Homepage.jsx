@@ -24,6 +24,7 @@ import arrowrightIcon from "../assets/Svg/arrowright.svg";
 function Homepage() {
   const [alternatetab, setAlternatetab] = useState(false);
   const [rightbartab, setRightbartab] = useState(false);
+  const [todaytdrop, setTodaytdrop] = useState(true);
   const peoplelist = [p2img, p1img, p3img];
 
   const addTaskIcon = (
@@ -108,8 +109,40 @@ function Homepage() {
                   <p className="tmstc-tlp1">Work on the user settings page</p>
                   <p className="tmstc-tlp2">Ushy Dashboard</p>
                 </div>
-                <div className="tmstc-top-right">{otherIconTask}</div>
+                <div
+                  className="tmstc-top-right"
+                  onClick={() => setTodaytdrop(true)}
+                >
+                  {otherIconTask}
+                </div>
+                {todaytdrop && (
+                  <>
+                    <div
+                      className="tmstc-bottomoverlay"
+                      onClick={() => setTodaytdrop(false)}
+                    />
+                    <div className="tmstc-topdropdown">
+                      <div className="tmstctditem">
+                        <label>Add to</label>
+                        <img src={arrowrightIcon} alt="" />
+                      </div>
+                      <div className="tmstctditem">
+                        <label>Duplicate</label>
+                      </div>
+                      <div className="tmstctditem">
+                        <label>Archive</label>
+                      </div>
+                      <div className="tmstctditem">
+                        <label>Delete</label>
+                      </div>
+                      <div className="tmstctditem">
+                        <label>Sharing & Permissions</label>
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
+
               <div className="tmstc-bottom">
                 <div className="tmstc-bottom-left">
                   {clockIcon}
@@ -257,7 +290,7 @@ function Homepage() {
 
             {moreIcon}
           </div>
-          
+
           <div className="alternatecomments">
             <div className="alternatecommentsitem">
               <img src={p2img} alt="" />
@@ -267,7 +300,11 @@ function Homepage() {
                   <label className="acirtoptime">11:44 AM</label>
                 </div>
                 <div className="acirbottom">
-                  <p className="acirbottommessage">Could you please notify me about the issues on the landing page, so that we could fix it together, he designed it, so he knows the outcome of it.</p>
+                  <p className="acirbottommessage">
+                    Could you please notify me about the issues on the landing
+                    page, so that we could fix it together, he designed it, so
+                    he knows the outcome of it.
+                  </p>
                 </div>
               </div>
             </div>
@@ -279,7 +316,10 @@ function Homepage() {
                   <label className="acirtoptime">6:18 PM</label>
                 </div>
                 <div className="acirbottom">
-                  <p className="acirbottommessage">The places that should have drop down options for the 'account preference' section don't have them</p>
+                  <p className="acirbottommessage">
+                    The places that should have drop down options for the
+                    'account preference' section don't have them
+                  </p>
                 </div>
               </div>
             </div>
