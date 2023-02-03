@@ -334,12 +334,11 @@ z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 15px;
+  padding: 8px 15px;
 }
 
 .tmstctditem label {
-  font-size: 13.5px;
-  line-height: 13.5px;
+  font-size: 12.5px;
   cursor: pointer;
 }
 

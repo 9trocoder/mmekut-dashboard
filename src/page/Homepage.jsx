@@ -24,7 +24,7 @@ import arrowrightIcon from "../assets/Svg/arrowright.svg";
 function Homepage() {
   const [alternatetab, setAlternatetab] = useState(false);
   const [rightbartab, setRightbartab] = useState(false);
-  const [todaytdrop, setTodaytdrop] = useState(true);
+  const [todaytdrop, setTodaytdrop] = useState(false);
   const peoplelist = [p2img, p1img, p3img];
 
   const addTaskIcon = (
