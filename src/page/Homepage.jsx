@@ -5,6 +5,7 @@ import {
   calendarIconSmall,
   chatNotActive,
   clockIcon,
+  homeTextActive,
   closeIcon,
   doneIcon,
   moreIcon,
@@ -14,6 +15,12 @@ import {
   uploadIcon,
   doneMarkIcon,
   tasks,
+  homeIconActive,
+  taskNotActive,
+  notificationNotActive,
+  workspaceTextNotActive,
+  chatTextNotActive,
+  notificationTextNotActive,
 } from "../Utils/tools";
 import p2img from "../assets/images/p2.png";
 import p1img from "../assets/images/p1.png";
@@ -77,6 +84,27 @@ function Homepage() {
               <p className="nhcp2">FrontEnd Developer</p>
             </div>
           </div>
+          <div className="navbaritemscnt">
+            <div className="navbaritemscnt-items nbiciactive">
+              {homeIconActive}
+              <label>{homeTextActive}</label>
+            </div>
+
+            <div className="navbaritemscnt-items">
+              {taskNotActive}
+              <label>{workspaceTextNotActive}</label>
+            </div>
+
+            <div className="navbaritemscnt-items">
+              {chatNotActive}
+              <label>{chatTextNotActive}</label>
+            </div>
+
+            <div className="navbaritemscnt-items">
+              {notificationNotActive}
+              <label>{notificationTextNotActive}</label>
+            </div>
+          </div>
         </div>
       </div>
       {!showCalendar && (
@@ -85,7 +113,11 @@ function Homepage() {
             <p className="homeheader_title">Home</p>
             <div
               className="homeheader_iconcnt"
-              onClick={() => {setShowCalendar(true); setRightbartab(false); setAlternatetab(false)}}
+              onClick={() => {
+                setShowCalendar(true);
+                setRightbartab(false);
+                setAlternatetab(false);
+              }}
             >
               {calendarIconSmall}
               <p className="homeheader_icontitle">Calendar</p>

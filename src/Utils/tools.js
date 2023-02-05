@@ -699,8 +699,8 @@ export const addIconNotActive = (
 
 export const notificationActive = (
   <svg
-    width="24"
-    height="24"
+    width="16"
+    height="16"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -716,8 +716,8 @@ export const notificationActive = (
 
 export const notificationNotActive = (
   <svg
-    width="24"
-    height="24"
+    width="16"
+    height="16"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -726,15 +726,15 @@ export const notificationNotActive = (
       fillRule="evenodd"
       clipRule="evenodd"
       d="M12.9999 3C12.9999 2.44772 12.5522 2 11.9999 2C11.4477 2 10.9999 2.44772 10.9999 3V3.75H10.4425C8.21745 3.75 6.37585 5.48001 6.23695 7.70074L6.01595 11.2342C5.93169 12.5814 5.4794 13.8797 4.70834 14.9876C4.01166 15.9886 4.63188 17.3712 5.84281 17.5165L9.24994 17.9254V19C9.24994 20.5188 10.4812 21.75 11.9999 21.75C13.5187 21.75 14.7499 20.5188 14.7499 19V17.9254L18.1571 17.5165C19.368 17.3712 19.9882 15.9886 19.2915 14.9876C18.5205 13.8797 18.0682 12.5814 17.9839 11.2342L17.7629 7.70074C17.624 5.48001 15.7824 3.75 13.5573 3.75H12.9999V3ZM10.4425 5.25C9.00952 5.25 7.82348 6.36417 7.73403 7.79438L7.51303 11.3278C7.41163 12.949 6.86738 14.5112 5.93953 15.8444C5.88918 15.9168 5.934 16.0167 6.02153 16.0272L9.75919 16.4757C11.2477 16.6543 12.7522 16.6543 14.2407 16.4757L17.9783 16.0272C18.0659 16.0167 18.1107 15.9168 18.0603 15.8444C17.1325 14.5112 16.5882 12.949 16.4868 11.3278L16.2658 7.79438C16.1764 6.36417 14.9903 5.25 13.5573 5.25H10.4425ZM11.9999 20.25C11.3096 20.25 10.7499 19.6904 10.7499 19V18.25H13.2499V19C13.2499 19.6904 12.6903 20.25 11.9999 20.25Z"
-      fill="#000b23"
+      fill="#9a9fbf"
     />
   </svg>
 );
 
 export const tasksActive = (
   <svg
-    width="20"
-    height="20"
+    width="16"
+    height="16"
     viewBox="0 0 20 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -765,29 +765,29 @@ export const tasksActive = (
 
 export const tasksNotActive = (
   <svg
-    width="20"
-    height="20"
+    width="16"
+    height="16"
     viewBox="0 0 20 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
       d="M6.33337 7.66663H13"
-      stroke="#000b23"
+      stroke="#9a9fbf"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
       d="M18.3333 1V25H2.33333C1.97971 25 1.64057 24.8595 1.39052 24.6095C1.14048 24.3594 1 24.0203 1 23.6667V2.33333C1 1.97971 1.14048 1.64057 1.39052 1.39052C1.64057 1.14048 1.97971 1 2.33333 1H18.3333Z"
-      stroke="#000b23"
+      stroke="#9a9fbf"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
       d="M1 22.3334V21.0001C1 20.6465 1.14048 20.3073 1.39052 20.0573C1.64057 19.8072 1.97971 19.6667 2.33333 19.6667H18.3333"
-      stroke="#000b23"
+      stroke="#9a9fbf"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -796,8 +796,8 @@ export const tasksNotActive = (
 );
 export const homeIconActive = (
   <svg
-    width="20"
-    height="20"
+    width="16"
+    height="16"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -814,15 +814,15 @@ export const homeIconActive = (
 
 export const homeIconNotActive = (
   <svg
-    width="20"
-    height="20"
+    width="16"
+    height="16"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
       d="M22.0879 25C23.3833 25 24.5029 24.0945 24.6767 22.782C24.8419 21.5346 24.9978 19.8187 24.9978 17.784C24.9978 13.4545 25.2355 10.8111 20.7633 6.23849C18.7006 4.12948 16.3967 2.51359 14.8384 1.53494C13.7027 0.821686 12.2972 0.821685 11.1615 1.53494C9.60326 2.51359 7.29941 4.12948 5.23671 6.23849C0.764498 10.8111 1.00219 13.4545 1.00219 17.784C1.00219 19.8187 1.15805 21.5346 1.32328 22.782C1.49713 24.0945 2.6167 25 3.91209 25H22.0879Z"
-      stroke="#000b23"
+      stroke="#9a9fbf"
       strokeWidth="1.65"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -862,8 +862,8 @@ export const homeIconNotActive = (
 
 export const chatActive = (
   <svg
-    width="20"
-    height="20"
+    width="16"
+    height="16"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -877,8 +877,8 @@ export const chatActive = (
 
 export const chatNotActive = (
   <svg
-    width="20"
-    height="20"
+    width="16"
+    height="16"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -892,8 +892,8 @@ export const chatNotActive = (
 
 export const taskActive = (
   <svg
-    width="20"
-    height="20"
+    width="16"
+    height="16"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -907,15 +907,15 @@ export const taskActive = (
 
 export const taskNotActive = (
   <svg
-    width="20"
-    height="20"
+    width="16"
+    height="16"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
       d="M8.2 12.6316C7.64772 12.6316 7.2 13.0793 7.2 13.6316C7.2 14.1839 7.64772 14.6316 8.2 14.6316V12.6316ZM14.6 14.6316C15.1523 14.6316 15.6 14.1839 15.6 13.6316C15.6 13.0793 15.1523 12.6316 14.6 12.6316V14.6316ZM8.2 17.6842C7.64772 17.6842 7.2 18.1319 7.2 18.6842C7.2 19.2365 7.64772 19.6842 8.2 19.6842V17.6842ZM17.8 19.6842C18.3523 19.6842 18.8 19.2365 18.8 18.6842C18.8 18.1319 18.3523 17.6842 17.8 17.6842V19.6842ZM8.2 1V0C7.64772 0 7.2 0.447715 7.2 1L8.2 1ZM17.8 1H18.8C18.8 0.447715 18.3523 0 17.8 0V1ZM17.8 4.78947V5.78947C18.3523 5.78947 18.8 5.34176 18.8 4.78947H17.8ZM8.2 4.78947H7.2C7.2 5.34176 7.64772 5.78947 8.2 5.78947V4.78947ZM8.2 14.6316H14.6V12.6316H8.2V14.6316ZM8.2 19.6842H17.8V17.6842H8.2V19.6842ZM8.2 2H17.8V0H8.2V2ZM17.8 3.78947H8.2V5.78947H17.8V3.78947ZM16.8 1V2.61594H18.8V1H16.8ZM16.8 2.61594V4.78947H18.8V2.61594H16.8ZM9.2 4.78947V2.61594H7.2V4.78947H9.2ZM9.2 2.61594V1H7.2V2.61594H9.2ZM13 24C8.44067 24 5.79696 23.3187 4.24657 21.8499C2.7132 20.3972 2 17.9317 2 13.6316H0C0 18.025 0.698561 21.2436 2.87108 23.3018C5.02657 25.3438 8.38286 26 13 26V24ZM24 13.6316C24 17.9317 23.2868 20.3972 21.7534 21.8499C20.203 23.3187 17.5593 24 13 24V26C17.6171 26 20.9734 25.3438 23.1289 23.3018C25.3014 21.2436 26 18.025 26 13.6316H24ZM17.6234 3.60022C20.1513 4.05377 21.6548 4.96731 22.5815 6.42105C23.548 7.93737 24 10.2087 24 13.6316H26C26 10.1118 25.5516 7.35964 24.268 5.34599C22.9444 3.26976 20.848 2.14683 17.9766 1.63165L17.6234 3.60022ZM2 13.6316C2 10.2087 2.45195 7.93737 3.41854 6.42105C4.34523 4.96731 5.84874 4.05377 8.3766 3.60022L8.0234 1.63165C5.15204 2.14683 3.05555 3.26976 1.73205 5.34599C0.448439 7.35964 0 10.1118 0 13.6316H2Z"
-      fill="#000b23"
+      fill="#9a9fbf"
     />
   </svg>
 );
@@ -961,9 +961,9 @@ export const dividerr = <div className="ddiverder" />;
 export const homeTextActive = <p className="text__active">Home</p>;
 export const homeTextNotActive = <p className="text__not-active">Home</p>;
 
-export const workspaceTextActive = <p className="text__active">Project</p>;
+export const workspaceTextActive = <p className="text__active">Workspace</p>;
 export const workspaceTextNotActive = (
-  <p className="text__not-active">Project</p>
+  <p className="text__not-active">Workspace</p>
 );
 export const chatTextActive = <p className="text__active">Chat</p>;
 export const chatTextNotActive = <p className="text__not-active">Chat</p>;

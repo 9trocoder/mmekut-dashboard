@@ -120,18 +120,17 @@ select {
 
 .text__active {
   color: #0184fb;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
   letter-spacing: -0.03em;
   font-family: "Plus Jakarta Sans", sans-serif !important;
 }
 
 .text__not-active {
-  color: #000b23;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 12px;
+  color: #53575e;
+  font-size: 13px;
+  line-height: 13px;
   letter-spacing: -0.03em;
   font-family: "Plus Jakarta Sans", sans-serif !important;
 }
