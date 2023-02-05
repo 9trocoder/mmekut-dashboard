@@ -3,7 +3,9 @@
 } */
 
 .calendarpage__cnt {
-    margin-top: 10px;
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
     padding: 0px 8px;
 }
 
