@@ -666,6 +666,10 @@
   cursor: pointer;
 }
 
+.closecalendar {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1440px) {
   .left-bar {
     max-width: 70px;

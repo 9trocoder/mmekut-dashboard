@@ -13,6 +13,7 @@ import {
   shareIcon,
   uploadIcon,
   doneMarkIcon,
+  tasks,
 } from "../Utils/tools";
 import p2img from "../assets/images/p2.png";
 import p1img from "../assets/images/p1.png";
@@ -24,6 +25,7 @@ import sendIcon from "../assets/Svg/send.svg";
 import attachIcon from "../assets/Svg/chatadd.svg";
 import arrowrightIcon from "../assets/Svg/arrowright.svg";
 import Calendarpage from "./Calendar";
+import Task from "../components/Task";
 
 function Homepage() {
   const [alternatetab, setAlternatetab] = useState(false);
@@ -83,7 +85,7 @@ function Homepage() {
             <p className="homeheader_title">Home</p>
             <div
               className="homeheader_iconcnt"
-              onClick={() => setShowCalendar(true)}
+              onClick={() => {setShowCalendar(true); setRightbartab(false)}}
             >
               {calendarIconSmall}
               <p className="homeheader_icontitle">Calendar</p>
@@ -111,57 +113,13 @@ function Homepage() {
                 {arrowdowngray}
                 <label>Today Task</label>
               </div>
-              <div className="taskwrapper-myspacetask-cnt">
-                <div className="tmstc-top">
-                  <div
-                    className="tmstc-top-left"
-                    onClick={() => setRightbartab(true)}
-                  >
-                    <p className="tmstc-tlp1">Work on the user settings page</p>
-                    <p className="tmstc-tlp2">Ushy Dashboard</p>
-                  </div>
-                  <div
-                    className="tmstc-top-right"
-                    onClick={() => setTodaytdrop(true)}
-                  >
-                    {otherIconTask}
-                  </div>
-                  {todaytdrop && (
-                    <>
-                      <div
-                        className="tmstc-bottomoverlay"
-                        onClick={() => setTodaytdrop(false)}
-                      />
-                      <div className="tmstc-topdropdown">
-                        <div className="tmstctditem">
-                          <label>Add to</label>
-                          <img src={arrowrightIcon} alt="" />
-                        </div>
-                        <div className="tmstctditem">
-                          <label>Duplicate</label>
-                        </div>
-                        <div className="tmstctditem">
-                          <label>Archive</label>
-                        </div>
-                        <div className="tmstctditem">
-                          <label>Delete</label>
-                        </div>
-                        <div className="tmstctditem">
-                          <label>Sharing & Permissions</label>
-                        </div>
-                      </div>
-                    </>
-                  )}
-                </div>
-
-                <div className="tmstc-bottom">
-                  <div className="tmstc-bottom-left">
-                    {clockIcon}
-                    <label>1:00 PM - 2:30 PM</label>
-                  </div>
-                  <img src={p1img} alt="" />
-                </div>
-              </div>
+              {tasks.slice(0, 2).map((task, key) => (
+                <Task
+                  task={task}
+                  key={key}
+                  handleClick={() => setRightbartab(true)}
+                />
+              ))}
               <div className="taskwrapper-myspace-item tmioverdue">
                 {arrowdowngray}
                 <label>Overdue</label>
@@ -188,10 +146,17 @@ function Homepage() {
         <div className="page-content">
           <div className="homeheader">
             <p className="homeheader_title">Calendar</p>
-            <div className="" onClick={() => setShowCalendar(false)}>{closeIcon}</div>
-            
+            <div
+              className="closecalendar"
+              onClick={() => {
+                setShowCalendar(false);
+                setRightbartab(false);
+              }}
+            >
+              {closeIcon}
+            </div>
           </div>
-          <Calendarpage />
+          <Calendarpage handleClick={() => setRightbartab(true)} />
         </div>
       )}
 
