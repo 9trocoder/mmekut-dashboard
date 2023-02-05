@@ -85,7 +85,7 @@ function Homepage() {
             <p className="homeheader_title">Home</p>
             <div
               className="homeheader_iconcnt"
-              onClick={() => {setShowCalendar(true); setRightbartab(false)}}
+              onClick={() => {setShowCalendar(true); setRightbartab(false); setAlternatetab(false)}}
             >
               {calendarIconSmall}
               <p className="homeheader_icontitle">Calendar</p>
@@ -151,6 +151,7 @@ function Homepage() {
               onClick={() => {
                 setShowCalendar(false);
                 setRightbartab(false);
+                setAlternatetab(false);
               }}
             >
               {closeIcon}
