@@ -134,6 +134,27 @@
   box-shadow: #0182fb54 0px 0px 5px 1px;
 }
 
+.signupbuttontop {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  color: #fff;
+  height: 40px;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: inherit;
+  background-color: #0184fb;
+  border: none;
+  border-radius: 8px;
+  padding: 0px 20px;
+  font-weight: 600;
+  box-shadow: #0182fb54 0px 0px 5px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 .loginrightbottom label {
   color: #fff;
   font-size: 18px;
@@ -170,6 +191,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .signupbuttontop{
+    display: none;
+  }
   .logincnt {
     grid-template-columns: 1fr;
   }

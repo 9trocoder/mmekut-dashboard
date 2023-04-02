@@ -24,6 +24,7 @@ function Loginpage() {
         </div>
       </div>
       <div className="loginright">
+        <button className="signupbuttontop">Sign up</button>
         <div className="logintopp">
           <img src={mmekutlogo} alt="" />
         </div>
