@@ -1,6 +1,7 @@
 import React from "react";
 import mmekutlogo from "../assets/Svg/mmekutlogo.svg";
 import loginimage from "../assets/images/loginimage.png";
+import backgroundam from "../assets/images/backgroundam.png";
 import { mailIcon, passwordIcon } from "../Utils/tools";
 import "./Loginpage.css";
 import { useNavigate } from "react-router-dom";
@@ -23,7 +24,7 @@ function Loginpage() {
           </p>
         </div>
       </div>
-      <div className="loginright">
+      <div className="loginright" style={{backgroundImage: `url(${backgroundam})`}}>
         <button className="signupbuttontop" onClick={() => navigate("/signup")}>Sign up</button>
         <div className="logintopp">
           <img src={mmekutlogo} alt="" />
