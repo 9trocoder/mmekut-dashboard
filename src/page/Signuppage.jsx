@@ -1,6 +1,6 @@
 import React from "react";
 import mmekutlogo from "../assets/Svg/mmekutlogo.svg";
-import loginimage from "../assets/images/loginimage.png";
+import signupimage from "../assets/images/signupimage.png";
 import { mailIcon, passwordIcon, sigupprofileicon } from "../Utils/tools";
 import "./Loginpage.css";
 import { useNavigate } from "react-router-dom";
@@ -14,7 +14,7 @@ function Signuppage() {
           <img src={mmekutlogo} alt="" />
         </div>
         <div className="loginmiddle">
-          <img src={loginimage} alt="" />
+          <img src={signupimage} alt="" />
         </div>
 
         <div className="loginbottom">
