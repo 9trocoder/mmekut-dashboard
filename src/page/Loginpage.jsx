@@ -24,7 +24,7 @@ function Loginpage() {
         </div>
       </div>
       <div className="loginright">
-        <button className="signupbuttontop">Sign up</button>
+        <button className="signupbuttontop" onClick={() => navigate("/signup")}>Sign up</button>
         <div className="logintopp">
           <img src={mmekutlogo} alt="" />
         </div>
@@ -55,7 +55,7 @@ function Loginpage() {
           </button>
           <div className="donhaveaccount">
             <p>Don't have an account?</p>
-            <span>Sign up</span>
+            <span onClick={() => navigate("/signup")}>Sign up</span>
           </div>
         </div>
 
