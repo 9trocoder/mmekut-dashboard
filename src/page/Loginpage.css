@@ -1,0 +1,230 @@
+.logincnt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.loginleft {
+  background: rgba(1, 132, 251, 0.05);
+  padding: 1rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+.loginmiddle {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginmiddle img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.loginbottomtext {
+  color: #8a94a6;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.loginright {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  padding: 0 20px;
+}
+
+.loginrighttop p {
+  color: #323b4b;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28.8px;
+  margin: 0px 0px 16px;
+}
+
+.loginrighttop label {
+  color: #8a94a6;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0px 0px 19.2px;
+}
+
+.loginrightmiddle {
+  margin: 19.2px 0;
+  display: grid;
+  gap: 22.4px;
+}
+
+.loginitem {
+  display: grid;
+  gap: 5px;
+  width: 100%;
+}
+
+.loginrightmiddlelabel {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+.inputcontainer {
+  border: 1px solid #e3e7f7;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 1px 10px 1px 10px;
+  gap: 15px;
+  color: #8a94a6;
+  width: 100%;
+}
+
+.inputcontainer input {
+  width: 100%;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forgotpasswordlabel {
+  white-space: nowrap;
+  font-size: 6px;
+}
+
+.login-btn {
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0184fb;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 1px 6px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.loginrightbottom {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  width: 45px;
+  height: 45px;
+  background-color: #0184fb;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: #0182fb54 0px 0px 5px 1px;
+}
+
+.loginrightbottom label {
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: inherit;
+}
+
+.donhaveaccount {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.donhaveaccount a {
+  color: #0184fb;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logintopp {
+  display: none;
+}
+
+.forgotpasswordlabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0184fb;
+}
+
+@media screen and (max-width: 800px) {
+  .logincnt {
+    grid-template-columns: 1fr;
+  }
+  .loginleft {
+    display: none;
+  }
+  .loginright {
+    width: 100%;
+    padding: 16px 63.6719px 48px;
+  }
+
+  .loginrightmiddle {
+    width: 100%;
+    gap: 30px;
+    margin-top: 32px;
+  }
+
+  .inputcontainer {
+    width: 100%;
+  }
+  .logintopp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0px;
+  }
+
+  .loginrighttop {
+    text-align: center;
+  }
+
+  .login-btn {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .loginright {
+    width: 100%;
+    padding: 16px 45.1875px 48px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .loginright {
+    width: 100%;
+    padding: 16px 20.1875px 48px;
+  }
+
+  .inputcontainer input {
+    font-size: 12px;
+  }
+
+  .forgotpasswordlabel span {
+    display: none;
+    cursor: pointer;
+  }
+}
