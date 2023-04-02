@@ -85,8 +85,7 @@
   align-items: center;
   padding: 1px 10px 1px 10px;
   gap: 15px;
-  color: #8a94a6;
-  width: 100%;
+  color: #8a94a6;width: 400px;
 }
 
 .inputcontainer input {
@@ -173,6 +172,20 @@
   line-height: 14px;
 }
 
+.byclickbelow {
+  font-size: 10px;
+  line-height: 12px;
+  color:#9A9FBF;
+
+}
+
+.byclickbelow span {
+  text-decoration: underline;
+  font-weight: 500;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
 .donhaveaccount span {
   color: #0184fb;
   font-weight: 600;
@@ -188,6 +201,7 @@
   font-size: 12px;
   font-weight: 600;
   color: #0184fb;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
