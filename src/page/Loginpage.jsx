@@ -29,7 +29,7 @@ function Loginpage() {
         </div>
         <div className="loginrighttop">
           <p>Welcome back!!</p>
-          <label>Good to see you back, we have missed you.</label>
+          <label>Good to see you again, we have missed you.</label>
         </div>
         <div className="loginrightmiddle">
           <div className="loginitem">
