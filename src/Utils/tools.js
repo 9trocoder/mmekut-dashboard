@@ -784,8 +784,8 @@ export const addIconNotActive = (
 
 export const notificationActive = (
   <svg
-    width="16"
-    height="16"
+    width="15"
+    height="15"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -801,8 +801,8 @@ export const notificationActive = (
 
 export const notificationNotActive = (
   <svg
-    width="16"
-    height="16"
+    width="15"
+    height="15"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -818,8 +818,8 @@ export const notificationNotActive = (
 
 export const tasksActive = (
   <svg
-    width="16"
-    height="16"
+    width="15"
+    height="15"
     viewBox="0 0 20 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -850,8 +850,8 @@ export const tasksActive = (
 
 export const tasksNotActive = (
   <svg
-    width="16"
-    height="16"
+    width="15"
+    height="15"
     viewBox="0 0 20 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -881,8 +881,8 @@ export const tasksNotActive = (
 );
 export const homeIconActive = (
   <svg
-    width="16"
-    height="16"
+    width="15"
+    height="15"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -899,8 +899,8 @@ export const homeIconActive = (
 
 export const homeIconNotActive = (
   <svg
-    width="16"
-    height="16"
+    width="15"
+    height="15"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -947,8 +947,8 @@ export const homeIconNotActive = (
 
 export const chatActive = (
   <svg
-    width="16"
-    height="16"
+    width="15"
+    height="15"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -962,8 +962,8 @@ export const chatActive = (
 
 export const chatNotActive = (
   <svg
-    width="16"
-    height="16"
+    width="15"
+    height="15"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -977,8 +977,8 @@ export const chatNotActive = (
 
 export const taskActive = (
   <svg
-    width="16"
-    height="16"
+    width="15"
+    height="15"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
