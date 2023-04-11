@@ -45,6 +45,7 @@ function Homepage() {
   const [showworkspacecard, setshowworkspacecard] = useState(false);
   const [shownav, setshownav] = useState("");
   const [homearrow, sethomearrow] = useState("");
+  const [showoverlay, setshowoverlay] = useState("");
   const peoplelist = [p2img, p1img, p3img];
 
   const addTaskIcon = (
@@ -148,12 +149,29 @@ function Homepage() {
   );
   return (
     <div className="task-manager">
-      <div className="left-bar" style={{display: `${shownav}`}}>
+      {shownav !== "" && (
+        <div
+          className="navoverlay"
+          onClick={() => {
+            setshownav("");
+            sethomearrow("flex");
+          }}
+        />
+      )}
+      <div className="left-bar" style={{ display: `${shownav}` }}>
         <div className="navbar">
           <div className="navbar__header">
             <div className="logonav">
               <img src={mmekutlogo} alt="" />
-              <button className="navbar_headericon" onClick={() => {setshownav(""); sethomearrow("flex")}}>{arrowleft}</button>
+              <button
+                className="navbar_headericon"
+                onClick={() => {
+                  setshownav("");
+                  sethomearrow("flex");
+                }}
+              >
+                {arrowleft}
+              </button>
             </div>
           </div>
           <div className="navbaritemscnt">
@@ -303,7 +321,16 @@ function Homepage() {
         <div className="page-content">
           <div className="homeheader">
             <div className="homeheaderleft">
-              <div style={{display: `${homearrow}`}} className="home_headericon" onClick={() => {setshownav("flex"); sethomearrow("none")}}>{arrowright}</div>
+              <div
+                style={{ display: `${homearrow}` }}
+                className="home_headericon"
+                onClick={() => {
+                  setshownav("flex");
+                  sethomearrow("none");
+                }}
+              >
+                {arrowright}
+              </div>
               <label className="homeheader_title">Home</label>
             </div>
 
