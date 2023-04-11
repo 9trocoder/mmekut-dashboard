@@ -1010,19 +1010,14 @@
   display: none;
 }
 
+
+
 @media screen and (max-width: 1440px) {
-  .left-bar {
-    display: none;
-  }
+  
 
-  .home_headericon {
-    display: flex;
-  }
+ 
 
-  .navbar {
-    max-width: 70px;
-  }
-
+ 
   /* .hmthldone label {
      display: none; 
   } */
@@ -1031,16 +1026,9 @@
     display: none;
   }
 
-  .navbaritemscnt-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+ 
 
-  .navbaritemscnt-items label {
-    display: none;
-    font-size: 12px;
-  }
+ 
   .page-content {
     flex: 2;
   }
@@ -1068,13 +1056,8 @@
 }
 
 @media screen and (max-width: 1080px) {
-  .left-bar {
-    max-width: 70px;
-  }
+  
 
-  .navbar__header-content {
-    display: none;
-  }
 
   .page-content {
     flex: 2;
@@ -1118,7 +1101,13 @@
   }
 }
 
-@media screen and (max-width: 771px) {
+@media screen and (max-width: 768px) {
+  .home_headericon {
+    display: flex;
+  }
+  .left-bar {
+    display: none;
+  }
   .right-bartutor {
     display: none;
   }
