@@ -999,9 +999,7 @@
   cursor: pointer;
 }
 
-.home_headericon {
-  display: none;
-}
+
 
 @media screen and (max-width: 1440px) {
   /* .hmthldone label {

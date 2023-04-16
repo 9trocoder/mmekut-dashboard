@@ -43,7 +43,7 @@ function Homepage() {
   const [showCalendar, setShowCalendar] = useState(false);
   const [showprofilecard, setprofilecard] = useState(false);
   const [showworkspacecard, setshowworkspacecard] = useState(false);
-  const [shownav, setshownav] = useState("");
+  const [shownav, setshownav] = useState("flex");
   const [homearrow, sethomearrow] = useState("");
   const [showoverlay, setshowoverlay] = useState("");
   const peoplelist = [p2img, p1img, p3img];
@@ -148,6 +148,7 @@ function Homepage() {
     </svg>
   );
   return (
+    
     <div className="task-manager">
       {shownav !== "" && (
         <div
@@ -158,7 +159,7 @@ function Homepage() {
           }}
         />
       )}
-      <div className="left-bar" style={{ display: `${shownav}` }}>
+      {shownav !== "" && <div className="left-bar" style={{ display: `${shownav}` }}>
         <div className="navbar">
           <div className="navbar__header">
             <div className="logonav">
@@ -316,13 +317,13 @@ function Homepage() {
             </div>
           </div>
         </div>
-      </div>
+      </div>}
       {!showCalendar && (
         <div className="page-content">
           <div className="homeheader">
             <div className="homeheaderleft">
-              <div
-                style={{ display: `${homearrow}` }}
+              {shownav === "" && <div
+                // style={{ display: `${homearrow}` }}
                 className="home_headericon"
                 onClick={() => {
                   setshownav("flex");
@@ -330,7 +331,7 @@ function Homepage() {
                 }}
               >
                 {arrowright}
-              </div>
+              </div>}
               <label className="homeheader_title">Home</label>
             </div>
 
