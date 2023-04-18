@@ -1003,11 +1003,130 @@
   display: none;
 }
 
+.workspaceonboardingoverlay {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.workspaceonboardingbody {
+  position: fixed;
+  top: 23%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: auto;
+  pointer-events: all;
+  max-height: 95vh;
+  overflow: auto;
+  background-color: #fff;
+  z-index: 51;
+  gap: 10px;
+  border-radius: 6px;
+  padding: 40px 50px;
+}
+
+.closeicon {
+  cursor: pointer;
+  margin-top: -20px;
+  margin-right: -20px;
+}
+
+.closeicon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.workonboardbtn {
+  background-color: #0184fb;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #0184fb;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 50px;
+  margin: 50px 0px 0px;
+  padding: 0px 30px;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.workonboardingmiddle {
+  margin-top: 30px;
+}
+
+.workonboardques {
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.workonboardinput {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+  background-color: transparent;
+  width: 100%;
+  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  padding: 25px 20px 12px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #0184fb;
+}
+
+.workonboardlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.workonboardlistleft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.workonboardlistleft p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.workonboarding_progress {
+  height: 4px;
+  width: 300px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.workonboardingprog {
+  background-color: #0184fb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.otherwok {
+  background-color: #0184fb15;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1440px) {
   /* .hmthldone label {
      display: none; 
   } */
-
 
   .navbar__header-content {
     display: none;
@@ -1060,7 +1179,6 @@
 }
 
 @media screen and (max-width: 950px) {
-
   .left-bar {
     display: none;
   }
@@ -1139,6 +1257,37 @@
 @media screen and (max-width: 500px) {
   .right-bar_res {
     width: 100vw;
+  }
+
+  .workonboarding_cnt {
+    padding: 20px 20px;
+  }
+
+  .workonboardlistleft {
+    display: grid;
+    gap: 10px;
+  }
+
+  .workonboarding_progress {
+    width: 200px;
+  }
+
+  .workspaceonboardingbody {
+    padding: 40px 20px;
+  }
+
+  .closeicon {
+    margin-top: -50px;
+    margin-right: -10px;
+  }
+
+  .workonboardques {
+    font-size: 14px !important;
+    line-height: 34px;
+  }
+
+  .workonboardinput {
+    font-size: 24px !important;
   }
 }
 

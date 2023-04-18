@@ -23,11 +23,6 @@ const router = createBrowserRouter([
     element: <Signuppage />,
     errorElement: <ErrorPage />,
   },
-  {
-    path: "/workspace_onboarding",
-    element: <Workspaceonboarding />,
-    errorElement: <ErrorPage />,
-  },
 ]);
 
 export default router;

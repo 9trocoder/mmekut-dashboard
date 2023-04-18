@@ -43,11 +43,12 @@ function Homepage() {
   const [showCalendar, setShowCalendar] = useState(false);
   const [showprofilecard, setprofilecard] = useState(false);
   const [showworkspacecard, setshowworkspacecard] = useState(false);
+  const [showworkspaceonboarding, setshowworkspaceonboarding] = useState(false);
   const [shownav, setshownav] = useState("");
   const [homearrow, sethomearrow] = useState("");
   const [showoverlay, setshowoverlay] = useState("");
   const peoplelist = [p2img, p1img, p3img];
- 
+
   const addTaskIcon = (
     <svg
       width="13"
@@ -287,9 +288,12 @@ function Homepage() {
                               <label>G</label>
                             </div>
                           </div>
-                          <Link to="/workspace_onboarding" className="navbarprofileaddworkspace">
+                          <div
+                            onClick={() => setshowworkspaceonboarding(true)}
+                            className="navbarprofileaddworkspace"
+                          >
                             {addworkspaceicon}
-                          </Link>
+                          </div>
                         </div>
                       </div>
                       <div className="navbarprofilebodybottom">
@@ -317,6 +321,47 @@ function Homepage() {
           </div>
         </div>
       </div>
+
+      {showworkspaceonboarding && (
+        <>
+          <div className="workspaceonboardingoverlay" />
+          <div className="workspaceonboardingbody">
+            <div className="workonboardlist">
+              <div className="workonboardlistleft">
+                <p>1 of 7</p>
+                <div className="workonboarding_progress">
+                  <div className="workonboardingprog" />
+                  <div className="otherwok"></div>
+                  <div className="otherwok"></div>
+                  <div className="otherwok"></div>
+                  <div className="otherwok"></div>
+                  <div className="otherwok"></div>
+                  <div className="otherwok"></div>
+                </div>
+              </div>
+              <div
+                className="closeicon"
+                onClick={() => setshowworkspaceonboarding(false)}
+              >
+                {closeicon}
+              </div>
+            </div>
+            <div className="workonboardingmiddle">
+              <p className="workonboardques">Name of your Workspace:</p>
+              <input
+                type="text"
+                placeholder="Githarita Workspace"
+                className="workonboardinput"
+              />
+            </div>
+
+            <div className="workonbardbtnbody">
+              <button className="workonboardbtn">Continue</button>
+            </div>
+          </div>
+        </>
+      )}
+
       {!showCalendar && (
         <div className="page-content">
           <div className="homeheader">
