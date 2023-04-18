@@ -20,8 +20,7 @@ function Workspaceonboarding() {
         <p className="workonboardques">Name of your Workspace:</p>
         <input
           type="text"
-          placeholder="Enter workspace name"
-          value="Githarita Workspace"
+          placeholder="Githarita Workspace"
           className="workonboardinput"
         />
       </div>
