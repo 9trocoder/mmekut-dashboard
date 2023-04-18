@@ -1274,6 +1274,7 @@
 
   .workspaceonboardingbody {
     padding: 40px 20px;
+    top: 50%;
   }
 
   .closeicon {
