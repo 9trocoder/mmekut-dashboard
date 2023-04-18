@@ -350,6 +350,7 @@ function Homepage() {
               <p className="workonboardques">Name of your Workspace:</p>
               <input
                 type="text"
+                autoFocus
                 placeholder="Githarita Workspace"
                 className="workonboardinput"
               />
