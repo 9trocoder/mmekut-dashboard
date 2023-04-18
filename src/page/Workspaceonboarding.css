@@ -1,0 +1,46 @@
+.workonboarding_cnt {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 50px;
+}
+
+.workonboardbtn {
+  background-color: #0184fb;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #0184fb;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 50px;
+  margin: 30px 0px 0px;
+  padding: 0px 30px;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.workonboardinput {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+    background-color: transparent;
+    width: 100%;
+    transition: all .2s cubic-bezier(.785,.135,.15,.86) 0s;
+    padding: 25px 20px 12px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #0184fb;
+}
+
+@media screen and (max-width: 500px) {
+    .workonboarding_cnt {
+        padding: 20px 20px;
+    }
+}

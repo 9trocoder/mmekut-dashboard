@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   addIconSmall,
   arrowdowngray,
@@ -43,11 +43,11 @@ function Homepage() {
   const [showCalendar, setShowCalendar] = useState(false);
   const [showprofilecard, setprofilecard] = useState(false);
   const [showworkspacecard, setshowworkspacecard] = useState(false);
-  const [shownav, setshownav] = useState("flex");
+  const [shownav, setshownav] = useState("");
   const [homearrow, sethomearrow] = useState("");
   const [showoverlay, setshowoverlay] = useState("");
   const peoplelist = [p2img, p1img, p3img];
-
+ 
   const addTaskIcon = (
     <svg
       width="13"
@@ -148,7 +148,6 @@ function Homepage() {
     </svg>
   );
   return (
-    
     <div className="task-manager">
       {shownav !== "" && (
         <div
@@ -159,7 +158,7 @@ function Homepage() {
           }}
         />
       )}
-      {shownav !== "" && <div className="left-bar" style={{ display: `${shownav}` }}>
+      <div className="left-bar" style={{ display: `${shownav}` }}>
         <div className="navbar">
           <div className="navbar__header">
             <div className="logonav">
@@ -167,7 +166,7 @@ function Homepage() {
               <button
                 className="navbar_headericon"
                 onClick={() => {
-                  setshownav("");
+                  setshownav("none");
                   sethomearrow("flex");
                 }}
               >
@@ -288,9 +287,9 @@ function Homepage() {
                               <label>G</label>
                             </div>
                           </div>
-                          <div className="navbarprofileaddworkspace">
+                          <Link to="/workspace_onboarding" className="navbarprofileaddworkspace">
                             {addworkspaceicon}
-                          </div>
+                          </Link>
                         </div>
                       </div>
                       <div className="navbarprofilebodybottom">
@@ -317,13 +316,13 @@ function Homepage() {
             </div>
           </div>
         </div>
-      </div>}
+      </div>
       {!showCalendar && (
         <div className="page-content">
           <div className="homeheader">
             <div className="homeheaderleft">
-              {shownav === "" && <div
-                // style={{ display: `${homearrow}` }}
+              <div
+                style={{ display: `${homearrow}` }}
                 className="home_headericon"
                 onClick={() => {
                   setshownav("flex");
@@ -331,7 +330,7 @@ function Homepage() {
                 }}
               >
                 {arrowright}
-              </div>}
+              </div>
               <label className="homeheader_title">Home</label>
             </div>
 

@@ -999,12 +999,15 @@
   cursor: pointer;
 }
 
-
+.home_headericon {
+  display: none;
+}
 
 @media screen and (max-width: 1440px) {
   /* .hmthldone label {
      display: none; 
   } */
+
 
   .navbar__header-content {
     display: none;
@@ -1037,6 +1040,12 @@
 }
 
 @media screen and (max-width: 1080px) {
+  .left-bar {
+    display: none;
+  }
+  .home_headericon {
+    display: flex;
+  }
   .page-content {
     flex: 2;
   }
@@ -1051,6 +1060,13 @@
 }
 
 @media screen and (max-width: 950px) {
+
+  .left-bar {
+    display: none;
+  }
+  .home_headericon {
+    display: flex;
+  }
   .right-bar {
     display: none;
   }
