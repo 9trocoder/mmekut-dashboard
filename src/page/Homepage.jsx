@@ -172,7 +172,7 @@ function Homepage() {
     "#954A21",
     "#8B6B49",
   ];
-const howmanyworklist = [
+  const howmanyworklist = [
     {
       id: 1,
       persons: "Just me",
@@ -205,7 +205,7 @@ const howmanyworklist = [
       id: 1,
       persons: "I don't know",
     },
-  ]
+  ];
   const moodname = (
     <div className="workonboardingmiddle">
       <p className="workonboardques">Name of your Workspace:</p>
@@ -225,30 +225,29 @@ const howmanyworklist = [
           <p className="customizechooseprofile"> Avatar</p>
           <div className="cclpcnt">
             <div className="ccpdrag">
-            <svg
-              width="15"
-              height="15"
-              viewBox="0 0 15 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.81825 1.18188C7.64251 1.00615 7.35759 1.00615 7.18185 1.18188L4.18185 4.18188C4.00611 4.35762 4.00611 4.64254 4.18185 4.81828C4.35759 4.99401 4.64251 4.99401 4.81825 4.81828L7.05005 2.58648V9.49996C7.05005 9.74849 7.25152 9.94996 7.50005 9.94996C7.74858 9.94996 7.95005 9.74849 7.95005 9.49996V2.58648L10.1819 4.81828C10.3576 4.99401 10.6425 4.99401 10.8182 4.81828C10.994 4.64254 10.994 4.35762 10.8182 4.18188L7.81825 1.18188ZM2.5 9.99997C2.77614 9.99997 3 10.2238 3 10.5V12C3 12.5538 3.44565 13 3.99635 13H11.0012C11.5529 13 12 12.5528 12 12V10.5C12 10.2238 12.2239 9.99997 12.5 9.99997C12.7761 9.99997 13 10.2238 13 10.5V12C13 13.104 12.1062 14 11.0012 14H3.99635C2.89019 14 2 13.103 2 12V10.5C2 10.2238 2.22386 9.99997 2.5 9.99997Z"
-                fill="currentColor"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <p className="ccpdragtext">
-              Drag image here or <span>browse</span>
-            </p>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.81825 1.18188C7.64251 1.00615 7.35759 1.00615 7.18185 1.18188L4.18185 4.18188C4.00611 4.35762 4.00611 4.64254 4.18185 4.81828C4.35759 4.99401 4.64251 4.99401 4.81825 4.81828L7.05005 2.58648V9.49996C7.05005 9.74849 7.25152 9.94996 7.50005 9.94996C7.74858 9.94996 7.95005 9.74849 7.95005 9.49996V2.58648L10.1819 4.81828C10.3576 4.99401 10.6425 4.99401 10.8182 4.81828C10.994 4.64254 10.994 4.35762 10.8182 4.18188L7.81825 1.18188ZM2.5 9.99997C2.77614 9.99997 3 10.2238 3 10.5V12C3 12.5538 3.44565 13 3.99635 13H11.0012C11.5529 13 12 12.5528 12 12V10.5C12 10.2238 12.2239 9.99997 12.5 9.99997C12.7761 9.99997 13 10.2238 13 10.5V12C13 13.104 12.1062 14 11.0012 14H3.99635C2.89019 14 2 13.103 2 12V10.5C2 10.2238 2.22386 9.99997 2.5 9.99997Z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <p className="ccpdragtext">
+                Drag image here or <span>browse</span>
+              </p>
+            </div>
+            <p className="ccor">or</p>
+            <div className="ccpavatar">
+              <p className="ccpavatartext">E</p>
+            </div>
           </div>
-          <p className="ccor">or</p>
-          <div className="ccpavatar">
-            <p className="ccpavatartext">E</p>
-          </div>
-          </div>
-          
         </div>
         <div className="customizeworkspaceright">
           <p className="customizechooseprofile">Theme</p>
@@ -264,10 +263,12 @@ const howmanyworklist = [
       </div>
     </div>
   );
- 
+
   const howmanypeoplework = (
     <div className="howmanypeoplework">
-      <p className="workonboardques">How many people are you going to be working with?</p>
+      <p className="workonboardques">
+        How many people are you going to be working with?
+      </p>
       <div className="howmanypeopleworkbody">
         {howmanyworklist.map((hmwlist, key) => (
           <button className="howmanyworkpbtn" key={key}>
@@ -276,7 +277,14 @@ const howmanyworklist = [
         ))}
       </div>
     </div>
-  )
+  );
+
+  const startusingworkspace = (
+    <p className="startusingworkspacetitle">
+      Start handling multiple projects across cross-functional teams,
+      organizations and individuals on our platform.
+    </p>
+  );
 
   const workspaceonboardlist = [
     {
@@ -284,32 +292,18 @@ const howmanyworklist = [
       view: moodname,
     },
     {
-      id: 1,
+      id: 2,
       view: customizeworkspace,
     },
     {
-      id: 1,
+      id: 3,
       view: howmanypeoplework,
     },
     {
-      id: 1,
-      view: "",
-    },
-    {
-      id: 1,
-      view: "",
-    },
-    {
-      id: 1,
-      view: "",
-    },
-    {
-      id: 1,
-      view: "",
+      id: 4,
+      view: startusingworkspace,
     },
   ];
-
- 
 
   useEffect(() => {
     if (incre === workspaceonboardlist.length) {
@@ -571,8 +565,33 @@ const howmanyworklist = [
                 </button>
               )}
               {shownext && (
-                <button className="workonboardbtn" onClick={() => handleNext()}>
+                <button
+                  className="workonboardbtn"
+                  onClick={() => handleNext()}
+                >
                   Next
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              )}
+              {incre === 4 && (
+                <button
+                  className="workonboardbtn"
+                  onClick={() => setshowworkspaceonboarding(false)}
+                >
+                  Create Workspace
                   <svg
                     width="15"
                     height="15"

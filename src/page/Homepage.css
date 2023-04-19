@@ -1078,8 +1078,6 @@
   line-height: 50px;
   height: 52px;
   border-radius: 6px;
-
-
 }
 
 .workonboardingmiddle {
@@ -1147,7 +1145,6 @@
   gap: 40px;
   margin-top: 40px;
 }
-
 
 .customizechooseprofile {
   font-size: 14px;
@@ -1242,9 +1239,16 @@
   cursor: pointer;
 }
 
-.howmanyworkpbtn:hover, .howmanyworkpbtn:focus {
+.howmanyworkpbtn:hover,
+.howmanyworkpbtn:focus {
   border: 1px solid #0184fb;
   color: #0184fb;
+}
+
+.startusingworkspacetitle {
+  color: #343434;
+  font-size: 36px;
+  line-height: 50px;
 }
 @media screen and (max-width: 1440px) {
   /* .hmthldone label {
@@ -1338,7 +1342,6 @@
   .customizeworkspacebody {
     flex-direction: column;
     gap: 50px;
-    
   }
 }
 
@@ -1426,11 +1429,9 @@
     padding-bottom: 50px;
   }
 
-  .cclpcnt{
+  .cclpcnt {
     gap: 20px;
   }
-
-
 }
 
 @keyframes dropdownMenuAnimation {
