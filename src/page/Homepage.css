@@ -1014,12 +1014,9 @@
 }
 .workspaceonboardingbody {
   position: fixed;
-  top: 23%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 95%;
+  left: 50px;
+  right: 50px;
+  top: 50px;
   height: auto;
   pointer-events: all;
   max-height: 95vh;
@@ -1273,8 +1270,10 @@
   }
 
   .workspaceonboardingbody {
+    left: 10px;
+    right: 10px;
+    top: 15px;
     padding: 40px 20px;
-    top: 30%;
   }
 
   .closeicon {
