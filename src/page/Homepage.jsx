@@ -172,7 +172,40 @@ function Homepage() {
     "#954A21",
     "#8B6B49",
   ];
-
+const howmanyworklist = [
+    {
+      id: 1,
+      persons: "Just me",
+    },
+    {
+      id: 2,
+      persons: "2 - 5",
+    },
+    {
+      id: 3,
+      persons: "6 - 10",
+    },
+    {
+      id: 4,
+      persons: "11 - 50",
+    },
+    {
+      id: 5,
+      persons: "51 - 100",
+    },
+    {
+      id: 6,
+      persons: "101 - 200",
+    },
+    {
+      id: 1,
+      persons: "201 - 500",
+    },
+    {
+      id: 1,
+      persons: "I don't know",
+    },
+  ]
   const moodname = (
     <div className="workonboardingmiddle">
       <p className="workonboardques">Name of your Workspace:</p>
@@ -231,6 +264,19 @@ function Homepage() {
       </div>
     </div>
   );
+ 
+  const howmanypeoplework = (
+    <div className="howmanypeoplework">
+      <p className="workonboardques">How many people are you going to be working with?</p>
+      <div className="howmanypeopleworkbody">
+        {howmanyworklist.map((hmwlist, key) => (
+          <button className="howmanyworkpbtn" key={key}>
+            {hmwlist.persons}
+          </button>
+        ))}
+      </div>
+    </div>
+  )
 
   const workspaceonboardlist = [
     {
@@ -243,7 +289,7 @@ function Homepage() {
     },
     {
       id: 1,
-      view: "",
+      view: howmanypeoplework,
     },
     {
       id: 1,
@@ -262,6 +308,8 @@ function Homepage() {
       view: "",
     },
   ];
+
+ 
 
   useEffect(() => {
     if (incre === workspaceonboardlist.length) {
