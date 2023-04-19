@@ -1017,6 +1017,7 @@
   left: 50px;
   right: 50px;
   top: 50px;
+  bottom: 50px;
   height: auto;
   pointer-events: all;
   max-height: 95vh;
@@ -1026,6 +1027,9 @@
   gap: 10px;
   border-radius: 6px;
   padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .closeicon {
@@ -1042,7 +1046,6 @@
 .workonbardbtnbody {
   display: flex;
   align-items: center;
-  margin-top: 50px;
   gap: 20px;
 }
 
