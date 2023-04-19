@@ -1393,6 +1393,13 @@
     width: 100vw;
   }
 
+  .alternate-bar_res {
+    width: 100%;
+  }
+
+  .hmthldone {
+    display: none;
+  }
   .workonboarding_cnt {
     padding: 20px 20px;
   }
