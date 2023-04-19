@@ -179,7 +179,7 @@ function Homepage() {
       <input
         type="text"
         autoFocus={true}
-        placeholder="Githarita Workspace"
+        placeholder="Selin Adeyemi"
         className="workonboardinput"
       />
     </div>
