@@ -191,7 +191,8 @@ function Homepage() {
       <div className="customizeworkspacebody">
         <div className="customizeworkspaceleft">
           <p className="customizechooseprofile">Choose your preferred avatar</p>
-          <div className="ccpdrag">
+          <div className="cclpcnt">
+            <div className="ccpdrag">
             <svg
               width="15"
               height="15"
@@ -213,11 +214,19 @@ function Homepage() {
           <div className="ccpavatar">
             <p className="ccpavatartext">E</p>
           </div>
+          </div>
+          
         </div>
         <div className="customizeworkspaceright">
-          {workspacecolor.map((wsc, key) => (
-            <div className="workspacecolordiv" style={{backgroundColor: `${wsc}`}} />
-          ))}
+          <p>Choose your workspace theme</p>
+          <div className="cwrcnt">
+            {workspacecolor.map((wsc, key) => (
+              <div
+                className="workspacecolordiv"
+                style={{ backgroundColor: `${wsc}` }}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
