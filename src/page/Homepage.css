@@ -1185,7 +1185,7 @@
   padding: 10px;
   gap: 10px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 3px;
 }
 
 .ccpavatar {
@@ -1199,7 +1199,7 @@
   padding: 10px;
   gap: 10px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 3px;
 }
 
 .ccpavatartext {
@@ -1211,7 +1211,7 @@
 .workspacecolordiv {
   height: 30px;
   width: 30px;
-border-radius: 50%;
+  border-radius: 3px;
 }
 
 .cwrcnt {
