@@ -1039,9 +1039,15 @@
   height: 24px;
 }
 
+.workonbardbtnbody {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
 .workonboardbtn {
   background-color: #0184fb;
-  margin-top: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1053,11 +1059,23 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 50px;
-  margin: 50px 0px 0px;
   padding: 0px 30px;
   text-align: center;
   font-family: inherit;
   cursor: pointer;
+}
+
+.workonboardprevbtn {
+  background-color: transparent;
+  border: 1px solid #e8eaed;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+  line-height: 50px;
+  height: 52px;
+  border-radius: 6px;
+
+
 }
 
 .workonboardingmiddle {
