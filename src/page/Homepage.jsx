@@ -47,7 +47,7 @@ function Homepage() {
   const [showCalendar, setShowCalendar] = useState(false);
   const [showprofilecard, setprofilecard] = useState(false);
   const [showworkspacecard, setshowworkspacecard] = useState(false);
-  const [showworkspaceonboarding, setshowworkspaceonboarding] = useState(true);
+  const [showworkspaceonboarding, setshowworkspaceonboarding] = useState(false);
   const [shownav, setshownav] = useState("");
   const [homearrow, sethomearrow] = useState("");
   const [showoverlay, setshowoverlay] = useState("");
