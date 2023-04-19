@@ -1142,6 +1142,12 @@
   cursor: pointer;
 }
 
+
+.workspacecolordiv {
+  height: 20px;
+  width: 20px;
+  
+}
 @media screen and (max-width: 1440px) {
   /* .hmthldone label {
      display: none; 
