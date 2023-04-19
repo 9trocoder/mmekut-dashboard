@@ -178,7 +178,6 @@ function Homepage() {
       <p className="workonboardques">Name of your Workspace:</p>
       <input
         type="text"
-        autoFocus={true}
         placeholder="e.g co-workspace"
         className="workonboardinput"
       />
