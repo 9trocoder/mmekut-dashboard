@@ -1236,14 +1236,15 @@
   height: 52px;
   border-radius: 6px;
   font-family: inherit;
-  font-weight: 400;
-  color: #464d57;
+  font-weight: 500;
+  color: #9a9fbf;
   font-size: 14px;
   cursor: pointer;
 }
 
 .howmanyworkpbtn:hover, .howmanyworkpbtn:focus {
   border: 1px solid #0184fb;
+  color: #0184fb;
 }
 @media screen and (max-width: 1440px) {
   /* .hmthldone label {
