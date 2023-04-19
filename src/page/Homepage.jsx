@@ -190,7 +190,7 @@ function Homepage() {
       <p className="workonboardques">Customize your workspace</p>
       <div className="customizeworkspacebody">
         <div className="customizeworkspaceleft">
-          <p className="customizechooseprofile">Choose your preferred avatar</p>
+          <p className="customizechooseprofile"> Avatar</p>
           <div className="cclpcnt">
             <div className="ccpdrag">
             <svg
@@ -211,6 +211,7 @@ function Homepage() {
               Drag image here or <span>browse</span>
             </p>
           </div>
+          <p className="ccor">or</p>
           <div className="ccpavatar">
             <p className="ccpavatartext">E</p>
           </div>
@@ -218,7 +219,7 @@ function Homepage() {
           
         </div>
         <div className="customizeworkspaceright">
-          <p>Choose your workspace theme</p>
+          <p className="customizechooseprofile">Theme</p>
           <div className="cwrcnt">
             {workspacecolor.map((wsc, key) => (
               <div

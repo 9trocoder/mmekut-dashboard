@@ -1154,13 +1154,18 @@
   margin-bottom: 20px;
 }
 
+.ccor {
+  font-size: 16px;
+}
+
 .ccpdragtext {
   font-size: 12px;
 }
 
 .cclpcnt {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 30px;
 }
 
 .ccpdragtext span {
@@ -1206,6 +1211,12 @@
   height: 20px;
   width: 20px;
 
+}
+
+.cwrcnt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 @media screen and (max-width: 1440px) {
   /* .hmthldone label {
@@ -1295,6 +1306,12 @@
   .twtisubtaskcnt-right {
     margin-left: 20px;
   }
+
+  .customizeworkspacebody {
+    flex-direction: column;
+    gap: 50px;
+    
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1376,6 +1393,12 @@
   .workonboardinput {
     font-size: 24px !important;
   }
+
+  .customizeworkspacebody {
+    padding-bottom: 50px;
+  }
+
+
 }
 
 @keyframes dropdownMenuAnimation {
