@@ -1061,7 +1061,7 @@
 }
 
 .workonboardingmiddle {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .workonboardques {
@@ -1096,7 +1096,7 @@
   width: 100%;
 }
 
-.workonboardlistleft p {
+.workonboardlist p {
   font-size: 12px;
   font-weight: 500;
 }

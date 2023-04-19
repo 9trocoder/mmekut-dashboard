@@ -416,18 +416,16 @@ function Homepage() {
           <div className="workspaceonboardingoverlay" />
           <div className="workspaceonboardingbody">
             <div className="workonboardlist">
-              <div className="workonboardlistleft">
-                <p>1 of 7</p>
-                <div className="workonboarding_progress">
+                <p>{incre} of {workspaceonboardlist.length}</p>
+                {/* <div className="workonboarding_progress">
                   <div className="workonboardingprog" />
+                 <div className="otherwok"></div>
                   <div className="otherwok"></div>
                   <div className="otherwok"></div>
                   <div className="otherwok"></div>
                   <div className="otherwok"></div>
-                  <div className="otherwok"></div>
-                  <div className="otherwok"></div>
-                </div>
-              </div>
+                  <div className="otherwok"></div> 
+                </div>*/}
               <div
                 className="closeicon"
                 onClick={() => setshowworkspaceonboarding(false)}
