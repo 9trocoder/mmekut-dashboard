@@ -1067,6 +1067,7 @@
   font-family: inherit;
   cursor: pointer;
   gap: 10px;
+  white-space: nowrap;
 }
 
 .workonboardprevbtn {
