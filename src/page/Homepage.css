@@ -1246,9 +1246,9 @@
 }
 
 .startusingworkspacetitle {
-  color: #343434;
-  font-size: 36px;
-  line-height: 50px;
+  color: #2a2e34;
+  font-size: 26px;
+  line-height: 40px;
 }
 @media screen and (max-width: 1440px) {
   /* .hmthldone label {
