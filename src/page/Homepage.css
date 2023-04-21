@@ -1470,6 +1470,16 @@
 }
 
 @media screen and (max-width: 500px) {
+
+  .task-wrapper {
+    padding: 30px 20px;
+  }
+
+  .taskwrapper-task {
+    padding: 30px 20px;
+  }
+
+
   .right-bar_res {
     width: 100vw;
   }
