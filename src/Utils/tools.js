@@ -162,6 +162,45 @@ export const tasks = [
   },
 ];
 
+
+export const imtasks = [
+  {
+    id: 1,
+    name: "9trocoder",
+    projectName: "Ushy Dashboard",
+    task: "Work on the user settings page",
+    imageUrl: p1image,
+  },
+  {
+    id: 2,
+    name: "Mmekut",
+    projectName: "Mmmekut App",
+    task: "Create Calendar page for mmekut",
+    imageUrl: p2image,
+  },
+  {
+    id: 3,
+    name: "Mosope",
+    projectName: "Ushy App",
+    task: "Design alert dialog for backout",
+    imageUrl: p3image,
+  },
+  {
+    id: 4,
+    name: "9trocoder",
+    projectName: "Instagram Feeds",
+    task: "Upload mmekut news design feed to instagram!!",
+    imageUrl: p4image,
+  },
+  {
+    id: 5,
+    name: "Mmekut",
+    projectName: "SEO Optimization",
+    task: "Please kindly make the app visible on google search.",
+    imageUrl: p5image,
+  },
+];
+
 export const peopleAddIcon = (
   <svg
     width="30"
