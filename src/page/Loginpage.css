@@ -28,7 +28,7 @@
 .loginbottomtext {
   color: #8a94a6;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 21px;
 }
@@ -55,7 +55,7 @@
 .loginrighttop label {
   color: #8a94a6;
   font-family: Inter;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 21px;
   margin: 0px 0px 19.2px;
 }
@@ -85,7 +85,8 @@
   align-items: center;
   padding: 1px 10px 1px 10px;
   gap: 15px;
-  color: #8a94a6;width: 400px;
+  color: #8a94a6;
+  width: 400px;
 }
 
 .inputcontainer input {
@@ -112,7 +113,7 @@
   border: none;
   background-color: #0184fb;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 21px;
   padding: 1px 6px;
   color: #fff;
@@ -140,7 +141,7 @@
   right: 2rem;
   color: #fff;
   height: 40px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 14px;
   font-family: inherit;
   background-color: #0184fb;
@@ -157,7 +158,7 @@
 
 .loginrightbottom label {
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 27px;
   font-family: inherit;
 }
@@ -176,8 +177,7 @@
 .byclickbelow {
   font-size: 10px;
   line-height: 12px;
-  color:#8a94a6;
-
+  color: #8a94a6;
 }
 
 .byclickbelow span {
@@ -206,7 +206,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  .signupbuttontop{
+  .signupbuttontop {
     display: none;
   }
   .logincnt {
