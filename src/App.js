@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/mmekut",
+    path: "/home",
     element: <Homepage />,
     errorElement: <ErrorPage />,
   },

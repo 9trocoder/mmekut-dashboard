@@ -61,7 +61,7 @@ function Signuppage() {
             By clicking the button below you agree to our
             <span> Terms of Service </span> and <span>Privacy Policy.</span>
           </label>
-          <button className="login-btn" onClick={() => navigate("/mmekut")}>
+          <button className="login-btn" onClick={() => navigate("/home")}>
             Sign Up
           </button>
 

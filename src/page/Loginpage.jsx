@@ -53,7 +53,7 @@ function Loginpage() {
               </label>
             </div>
           </div>
-          <button className="login-btn" onClick={() => navigate("/mmekut")}>
+          <button className="login-btn" onClick={() => navigate("/home")}>
             Log In
           </button>
           <div className="donhaveaccount">
