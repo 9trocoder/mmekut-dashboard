@@ -3,6 +3,7 @@ import {
   arrowright,
   chatpeople,
   chatpeoplelist,
+  deliveredIcon,
   jother,
   searchBig,
   searchIcon,
@@ -46,10 +47,29 @@ function Chathome({
       <div className="chat-wrapper">
         <div className="chat-wrapperitems">
           {chatpeoplelist.map((chatlist, key) => (
-            <div className="chatpeoplecard">
-                <div className="chatpeoplecardleft">
-                    <img className="chatpeoplecardimage" src={chatlist.profilepicture} alt="" />
+            <div className="chatpeoplecard" key={key}>
+              <div className="chatpeoplecardleft">
+                <img
+                  className="chatpeoplecardimage"
+                  src={chatlist.profilepicture}
+                  alt=""
+                />
+              </div>
+              <div className="chatpeoplecardright">
+                <div className="chatpeoplecardrighttop">
+                  <div className="cpcrleft">
+                    <p>{chatlist.name}</p>
+                  </div>
+
+                  <div className="cpcright">
+                    <p>{chatlist.msgtime}</p>
+                  </div>
                 </div>
+                <div className="chatpeoplecardrightbottom">
+                  <div className="cpcrbleft">{deliveredIcon}</div>
+                  <p className="cpcbleftmessage">{chatlist.message}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
