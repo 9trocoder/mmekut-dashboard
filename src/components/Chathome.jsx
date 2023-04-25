@@ -30,7 +30,7 @@ function Chathome({
         </div>
 
         <div className="chatheader_iconcnt">
-          <div className="homeheader_iconcnt">{chatpeople}</div>
+          <div className="chatmoreicon">{chatpeople}</div>
           <div className="chatmoreicon">{jother}</div>
         </div>
       </div>
