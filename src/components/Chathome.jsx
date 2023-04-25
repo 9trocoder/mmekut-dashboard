@@ -1,5 +1,5 @@
 import React from "react";
-import { arrowright, chatpeople, jother } from "../Utils/tools";
+import { arrowright, chatpeople, jother, searchBig } from "../Utils/tools";
 
 function Chathome({
   homearrow,
@@ -22,12 +22,21 @@ function Chathome({
         </div>
 
         <div className="chatheader_iconcnt">
-          <div className="homeheader_iconcnt">
-            {chatpeople}
-          </div>
+          <div className="homeheader_iconcnt">{chatpeople}</div>
           <div className="chatmoreicon">{jother}</div>
         </div>
       </div>
+
+      <div className="chat-search">
+        <div className="chat-searchicon">{searchBig}</div>
+
+        <input
+          type="text"
+          className="chat-searchinput"
+          placeholder="Search or start a new chat"
+        />
+      </div>
+      <div className="chat-wrapper"></div>
     </div>
   );
 }

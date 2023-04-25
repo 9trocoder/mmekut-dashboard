@@ -11,7 +11,7 @@
   padding: 0px 18px 0 15px;
   height: 50px;
   background-color: #fff;
-  border-bottom: 1px solid #e9ebf0;
+ 
   justify-content: space-between;
 }
 
@@ -70,6 +70,44 @@
   background-color: #f6f7f9;
   fill: #ff00fc;
 }
+
+.chat-search {
+    border: 1px solid #e9ebf0;
+    margin: 5px 18px 0 15px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 5px 12px;
+  gap: 10px;
+}
+
+.chat-searchicon {
+    cursor: pointer;
+}
+
+.chat-searchinput {
+    width: 100%;
+    font-family: inherit;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    
+}
+
+.chat-searchinput::placeholder {
+    color: #9A9FBF;
+}
+
+.chat-wrapper {
+    padding: 30px 30px;
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+}
+
+
 @media screen and (max-width: 1440px) {
   .chat_content {
     flex: 1.5;
