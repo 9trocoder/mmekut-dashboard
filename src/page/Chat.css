@@ -12,6 +12,7 @@
   height: 50px;
   background-color: #fff;
   border-bottom: 1px solid #e9ebf0;
+  justify-content: space-between;
 }
 
 .chatheaderleft {
@@ -46,6 +47,29 @@
   fill: #ff00fc;
 }
 
+.chatheader_iconcnt {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.chatmoreicon {
+  cursor: pointer;
+  align-items: flex-start;
+
+  border-radius: 3px;
+  color: #2a2e34;
+
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+.chatmoreicon:hover,
+.chatmoreicon:focus {
+  background-color: #f6f7f9;
+  fill: #ff00fc;
+}
 @media screen and (max-width: 1440px) {
   .chat_content {
     flex: 1.5;

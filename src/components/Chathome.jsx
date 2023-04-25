@@ -1,5 +1,5 @@
 import React from "react";
-import { arrowright } from "../Utils/tools";
+import { arrowright, chatpeople, jother } from "../Utils/tools";
 
 function Chathome({
   homearrow,
@@ -19,6 +19,13 @@ function Chathome({
             {arrowright}
           </div>
           <label className="chatheader_title">Chat</label>
+        </div>
+
+        <div className="chatheader_iconcnt">
+          <div className="homeheader_iconcnt">
+            {chatpeople}
+          </div>
+          <div className="chatmoreicon">{jother}</div>
         </div>
       </div>
     </div>

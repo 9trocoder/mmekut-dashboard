@@ -4,6 +4,57 @@ import p3image from "../assets/images/p3.png";
 import p4image from "../assets/images/p4.png";
 import p5image from "../assets/images/p5.png";
 
+export const jother = (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M13.5 6C13.5 5.17157 12.8284 4.5 12 4.5C11.1716 4.5 10.5 5.17157 10.5 6C10.5 6.82843 11.1716 7.5 12 7.5C12.8284 7.5 13.5 6.82843 13.5 6Z"
+      fill="#9A9FBF"
+    />
+    <path
+      d="M12 10.5C12.8284 10.5 13.5 11.1716 13.5 12C13.5 12.8284 12.8284 13.5 12 13.5C11.1716 13.5 10.5 12.8284 10.5 12C10.5 11.1716 11.1716 10.5 12 10.5Z"
+      fill="#9A9FBF"
+    />
+    <path
+      d="M12 16.5C12.8284 16.5 13.5 17.1716 13.5 18C13.5 18.8284 12.8284 19.5 12 19.5C11.1716 19.5 10.5 18.8284 10.5 18C10.5 17.1716 11.1716 16.5 12 16.5Z"
+      fill="#9A9FBF"
+    />
+  </svg>
+);
+
+export const chatpeople = (
+  <svg
+    width="22"
+    height="12"
+    viewBox="0 0 22 12"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6 11C6 9.125 8.5 9.125 9.75 7.875C10.375 7.25 8.5 7.25 8.5 4.125C8.5 2.04188 9.33312 1 11 1C12.6669 1 13.5 2.04188 13.5 4.125C13.5 7.25 11.625 7.25 12.25 7.875C13.5 9.125 16 9.125 16 11"
+      stroke="#9A9FBF"
+      stroke-linecap="round"
+    />
+    <path
+      d="M16 8C16 7.0625 17.25 7.0625 17.875 6.4375C18.1875 6.125 17.25 6.125 17.25 4.5625C17.25 3.52094 17.6666 3 18.5 3C19.3334 3 19.75 3.52094 19.75 4.5625C19.75 6.125 18.8125 6.125 19.125 6.4375C19.75 7.0625 21 7.0625 21 8"
+      stroke="#9A9FBF"
+      stroke-width="0.5"
+      stroke-linecap="round"
+    />
+    <path
+      d="M1 8C1 7.0625 2.25 7.0625 2.875 6.4375C3.1875 6.125 2.25 6.125 2.25 4.5625C2.25 3.52094 2.66656 3 3.5 3C4.33344 3 4.75 3.52094 4.75 4.5625C4.75 6.125 3.8125 6.125 4.125 6.4375C4.75 7.0625 6 7.0625 6 8"
+      stroke="#9A9FBF"
+      stroke-width="0.5"
+      stroke-linecap="round"
+    />
+  </svg>
+);
+
 export const mmekutlogo = (
   <svg
     width="43"
@@ -161,7 +212,6 @@ export const tasks = [
     endDatetime: "2023-02-18T14:30",
   },
 ];
-
 
 export const imtasks = [
   {

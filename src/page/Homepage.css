@@ -129,6 +129,12 @@
   cursor: pointer;
 }
 
+.homeheader_iconcnt p {
+  cursor: pointer;
+}
+
+
+
 /* NavBar */
 .navbar {
   display: flex;
