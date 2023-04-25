@@ -5,7 +5,7 @@ import Homepage from "./page/Homepage";
 import ErrorPage from "./components/error-page";
 import Loginpage from "./page/Loginpage";
 import Signuppage from "./page/Signuppage";
-import Workspaceonboarding from "./page/Workspaceonboarding";
+import Chat from "./page/Chat";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +21,11 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <Signuppage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/chat",
+    element: <Chat />,
     errorElement: <ErrorPage />,
   },
 ]);

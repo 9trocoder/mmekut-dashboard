@@ -51,7 +51,7 @@ function Dashboardlayout({
             </div>
           </div>
           <div className="navbaritemscnt">
-            <Link to="/home" className="navbaritemscnt-items nbiciactive">
+            <Link to="/home" className={`navbaritemscnt-items ${linkaddress === "/home" && "nbiciactive"}`}>
               {linkaddress === "/home" ? (
                 <>
                   {homeIconActive}
@@ -65,7 +65,7 @@ function Dashboardlayout({
               )}
             </Link>
 
-            <Link to="/chat" className="navbaritemscnt-items">
+            <Link to="/chat" className={`navbaritemscnt-items ${linkaddress === "/chat" && "nbiciactive"}`}>
               {linkaddress === "/chat" ? (
                 <>
                   {chatActive}
@@ -79,7 +79,7 @@ function Dashboardlayout({
               )}
             </Link>
 
-            <Link to="/notification" className="navbaritemscnt-items">
+            <Link to="/notification" className={`navbaritemscnt-items ${linkaddress === "/notification" && "nbiciactive"}`}>
               {linkaddress === "/notification" ? (
                 <>
                   {notificationActive}

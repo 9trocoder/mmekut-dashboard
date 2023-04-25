@@ -32,13 +32,6 @@ function Homepage() {
         sethomearrow("flex");
       }}
     >
-      {showworkspaceonboarding && (
-        <Workspaceonboarding
-          handlecloseworkspaceonboarding={() =>
-            setshowworkspaceonboarding(false)
-          }
-        />
-      )}
 
       {!showCalendar && (
         <Homepagecard
