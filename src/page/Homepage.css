@@ -679,7 +679,8 @@
 
 .tmstc-tlp1,
 .twmcc-tlp1 {
-  font-size: 13.5px;
+  font-size: 11px;
+  font-weight: 500;
   line-height: 13.5px;
   margin-bottom: 8px;
 }
@@ -690,7 +691,7 @@
 
 .tmstc-tlp2,
 .twmcc-tlp2 {
-  font-size: 11px;
+  font-size: 9px;
   color: #656f7d;
   line-height: 11px;
 }
@@ -713,8 +714,9 @@
 }
 
 .tmstc-bottom-left label {
-  font-size: 11px;
+  font-size: 9px;
   color: #2a2e34;
+  margin-top: 2px;
 }
 
 .tmstc-bottom img {
