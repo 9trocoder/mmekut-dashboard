@@ -107,6 +107,10 @@
   height: 100%;
 }
 
+.chatpeoplecardimage {
+    width: 100%;
+}
+
 @media screen and (max-width: 1440px) {
   .chat_content {
     flex: 1.5;
