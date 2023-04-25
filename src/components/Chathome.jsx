@@ -1,5 +1,12 @@
 import React from "react";
-import { arrowright, chatpeople, jother, searchBig, searchIcon } from "../Utils/tools";
+import {
+  arrowright,
+  chatpeople,
+  chatpeoplelist,
+  jother,
+  searchBig,
+  searchIcon,
+} from "../Utils/tools";
 
 function Chathome({
   homearrow,
@@ -36,7 +43,17 @@ function Chathome({
           placeholder="Search or start a new chat"
         />
       </div>
-      <div className="chat-wrapper"></div>
+      <div className="chat-wrapper">
+        <div className="chat-wrapperitems">
+          {chatpeoplelist.map((chatlist, key) => (
+            <div className="chatpeoplecard">
+                <div className="chatpeoplecardleft">
+                    <img className="chatpeoplecardimage" src={chatlist.profilepicture} alt="" />
+                </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

@@ -1417,3 +1417,42 @@ export const howmanypeoplework = (
     </div>
   </div>
 );
+
+export const chatpeoplelist = [
+  {
+    id: 1,
+    name: "Alexander",
+    message: "Ok, I'll call you when i get there. and bring more snacks",
+    msgtime: "11:44 AM",
+    profilepicture: p1image,
+  },
+  {
+    id: 2,
+    name: "Joseph Ayodele",
+    message: "Start coding na",
+    msgtime: "11:44 AM",
+    profilepicture: p2image,
+  },
+  {
+    id: 3,
+    name: "Oladimeji Emmanuel",
+    message: "The containers are added to enable the user click on the group",
+    msgtime: "11:44 AM",
+    profilepicture: p3image,
+  },
+  {
+    id: 4,
+    name: "Mosope",
+    message:
+      "On the home scree, that first content, when you click on the 'view task",
+    msgtime: "11:44 AM",
+    profilepicture: p4image,
+  },
+  {
+    id: 5,
+    name: "Mmekut Mfon",
+    message: "See here... The task screen Emmanuel Adeyemi",
+    msgtime: "11:44 AM",
+    profilepicture: p5image,
+  },
+];
