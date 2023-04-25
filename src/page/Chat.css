@@ -34,11 +34,12 @@
   color: #2a2e34;
 
   margin: 0px 2px 0px 0px;
-  padding: 7px;
+  padding: 0px;
   text-align: center;
   background-color: transparent;
   border: none;
   display: none;
+  margin-right: 7px;
 }
 
 .chat_headericon:hover,
@@ -156,25 +157,25 @@
 }
 
 .cpcright p {
-    font-size: 12px;
-    font-weight: 400;
-    color: #464d57;
-    white-space: nowrap;
+  font-size: 12px;
+  font-weight: 400;
+  color: #464d57;
+  white-space: nowrap;
 }
 
 .chatpeoplecardrightbottom {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .cpcbleftmessage {
-    font-size: 13px;
-    color: #464d57;
-    width: 300px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: 13px;
+  color: #464d57;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 1440px) {
@@ -193,45 +194,38 @@
 }
 
 @media screen and (max-width: 500px) {
-    .cpcbleftmessage {
-        font-size: 13px;
-        color: #464d57;
-        width: 200px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    } 
+  .cpcbleftmessage {
+    width: 200px;
+  }
 
-    .chatpeoplecardrightbottom {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
+  .chatpeoplecardrightbottom {
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .chat-wrapper {
+    padding: 0px 5px;
+  }
+  .chatpeoplecard {
+    padding: 10px 5px;
+  }
+  .chatheader {
+    padding: 0px 10px 0 10px;
+  }
+  .chat-search {
+    margin: 0px 10px 15px 10px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .cpcbleftmessage {
-        font-size: 13px;
-        color: #464d57;
-        width: 100px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    } 
-    .cpcrleft p {
-        font-weight: 600;
-        font-size: 13px;
-        width: 100px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      .chatpeoplecard {
-        padding: 10px 10px;
-        border-radius: 8px;
-        cursor: pointer;
-        display: flex;
-        gap: 10px;
-        align-items: center;
-      }
+  .cpcbleftmessage {
+    width: 100px;
+  }
+  .cpcrleft p {
+    width: 100px;
+  }
+  .chatpeoplecard {
+    padding: 10px 10px;
+  }
 }
