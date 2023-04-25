@@ -36,7 +36,7 @@ function Chathome({
       </div>
 
       <div className="chat-search">
-        <div className="chat-searchicon">{searchBig}</div>
+        <div className="chat-searchicon">{searchIcon}</div>
 
         <input
           type="text"
