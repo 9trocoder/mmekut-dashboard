@@ -15,17 +15,8 @@ import {
   startOfToday,
 } from "date-fns";
 import {
-  clockIcon,
-  headerBackIcon,
-  otherIcon,
-  otherIconTask,
   tasks,
 } from "../Utils/tools";
-import p1image from "../assets/images/p1.png";
-import p2image from "../assets/images/p2.png";
-import p3image from "../assets/images/p3.png";
-import p4image from "../assets/images/p4.png";
-import p5image from "../assets/images/p5.png";
 import Task from "../components/Task";
 
 function classNames(...classes) {

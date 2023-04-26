@@ -489,7 +489,7 @@
 }
 
 .task-wrappertitle {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 24px;
   color: #292d34;
@@ -675,6 +675,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 15px;
+}
+
+.tmstc-top-left {
+  cursor: pointer;
 }
 
 .tmstc-tlp1,
