@@ -1478,11 +1478,11 @@
 
 @media screen and (max-width: 500px) {
   .task-wrapper {
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
 
   .taskwrapper-task {
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
 
   .right-bar_res {
@@ -1539,8 +1539,8 @@
   }
 
   .homeheader {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .hometaskheader {
@@ -1548,7 +1548,7 @@
     height: 50px;
     display: flex;
     align-items: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 20px;
     justify-content: space-between;
     border-bottom: 1px solid #e9ebf0;
   }
