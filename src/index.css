@@ -59,7 +59,7 @@ select {
   input[type="number"],
   input[type="email"],
   input[type="url"] {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -78,7 +78,7 @@ select {
   input[type="number"],
   input[type="email"],
   input[type="url"] {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -98,7 +98,7 @@ select {
   input[type="email"],
   input[type="tel"],
   input[type="url"] {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -118,13 +118,13 @@ select {
   input[type="email"],
   input[type="tel"],
   input[type="url"] {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 .text__active {
   color: #0184fb;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 13px;
   letter-spacing: -0.03em;
@@ -134,6 +134,7 @@ select {
 .text__not-active {
   color: #53575e;
   font-size: 13px;
+  font-weight: 500;
   line-height: 13px;
   letter-spacing: -0.03em;
   font-family: "Plus Jakarta Sans", sans-serif !important;
