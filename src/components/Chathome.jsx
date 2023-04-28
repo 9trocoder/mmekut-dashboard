@@ -47,7 +47,7 @@ function Chathome({
       <div className="chat-wrapper">
         <div className="chat-wrapperitems">
           {chatpeoplelist.map((chatlist, key) => (
-            <div className="chatpeoplecard" key={key}>
+            <div className="chatpeoplecard" key={key} onClick={handleshowchatdetails}>
               <div className="chatpeoplecardleft">
                 <img
                   className="chatpeoplecardimage"

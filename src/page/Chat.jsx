@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import Tabmessage from "../components/Tabmessage";
 import Chathome from "../components/Chathome";
 import Addtaskscard from "../components/Addtaskscard";
+import Chatview from "../components/Chatview";
 
 function Chat() {
   const location = useLocation();
@@ -35,9 +36,14 @@ function Chat() {
           setshownav("flex");
           sethomearrow("none");
         }}
+        handleshowchatdetails={() => setRightbartab(true)}
       />
       {!rightbartab && (
         <Tabmessage tabmessage="Click on chat to view message" />
+      )}
+
+      {rightbartab && (
+        <Chatview handlechatviewclose={() => setRightbartab(false)} handlechatresoursclick={() => setAlternatetab(true)} />
       )}
 
 <Addtaskscard />
