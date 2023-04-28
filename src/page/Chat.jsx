@@ -45,8 +45,6 @@ function Chat() {
       {rightbartab && (
         <Chatview handlechatviewclose={() => setRightbartab(false)} handlechatresoursclick={() => setAlternatetab(true)} />
       )}
-
-<Addtaskscard />
     </Dashboardlayout>
   );
 }
