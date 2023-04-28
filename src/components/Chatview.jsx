@@ -29,6 +29,8 @@ function Chatview({handlechatviewclose, handlechatresoursclick}) {
         </div>
         <div className="chatviewwrapper">
             <Leftchat message="Hello, we have a meeting by 10" msgtime="11:45 PM" />
+            <Leftchat message="Alright i will fix the meeting to the time is okay for everyone. So the meeting would be on google 
+meeting or zoom meeting. Please Kindly attend all meeting." msgtime="12:00 PM" />
         </div>
     </div>
   )

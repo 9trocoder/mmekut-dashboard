@@ -235,6 +235,7 @@
   position: relative;
   width: max-content;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .leftchat_cnt:hover > .leftchatmessagehover, .leftchat_cnt:focus > .leftchatmessagehover {
@@ -254,7 +255,9 @@
 .leftchatdmessage {
   background-color: #f2faff;
   padding: 8px 10px;
-  width: max-content;
+  width: 100%;
+  max-width: 20rem;
+  white-space: wrap;
   border-radius: 8px 8px 8px 0px;
 }
 
@@ -264,6 +267,8 @@
 
 .lcmmsgtime {
   padding-left: auto;
+  color: #464d57;
+  padding-top: 5px;
 }
 
 @media screen and (max-width: 1440px) {
