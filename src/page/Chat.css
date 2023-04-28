@@ -181,44 +181,89 @@
 }
 
 .chatview-bar {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    border-left: 1px solid #e3e7f7;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  border-left: 1px solid #e3e7f7;
 }
 
 .chatviewheader {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding: 0px 18px 0px 15px;
-    justify-content: space-between;
-    border-bottom: 1px solid #e9ebf0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0px 18px 0px 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid #e9ebf0;
 }
 
 .chaviewheader-left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .chatviewheader-left1 {
-    display: flex;
+  display: flex;
 }
 
 .chatviewheader-left1 img {
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
 }
 
 .chatviewheader-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.chatviewwrapper {
+  padding: 20px 30px;
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.leftchatmessagehover {
+  display: none;
+}
+
+.leftchat_cnt {
+  position: relative;
+  width: max-content;
+  cursor: pointer;
+}
+
+.leftchat_cnt:hover > .leftchatmessagehover, .leftchat_cnt:focus > .leftchatmessagehover {
+  display: flex;
+  position: absolute;
+  top: -15px;
+  border-radius: 8px;
+  right: 0;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 5px 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.leftchatdmessage {
+  background-color: #f2faff;
+  padding: 8px 10px;
+  width: max-content;
+  border-radius: 8px 8px 8px 0px;
+}
+
+.lcmmsg {
+ font-size: 14px;
+}
+
+.lcmmsgtime {
+  padding-left: auto;
 }
 
 @media screen and (max-width: 1440px) {
@@ -245,22 +290,22 @@
 }
 
 @media screen and (max-width: 950px) {
-    .chatview-bar {
-        display: none;
-    }
+  .chatview-bar {
+    display: none;
+  }
 
-    .chatview-bar_res {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        display: flex;
-        background-color: #fff;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        width: 500px;
-        z-index: 3;
-        border-left: none;
-    }
+  .chatview-bar_res {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 500px;
+    z-index: 3;
+    border-left: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -273,7 +318,8 @@
   }
 
   .chatview-bar_res {
-  width: 100vw;}
+    width: 100vw;
+  }
 }
 
 @media screen and (max-width: 450px) {

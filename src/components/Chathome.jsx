@@ -66,7 +66,6 @@ function Chathome({
                   </div>
                 </div>
                 <div className="chatpeoplecardrightbottom">
-                  <div className="cpcrbleft">{deliveredIcon}</div>
                   <p className="cpcbleftmessage">{chatlist.message}</p>
                 </div>
               </div>

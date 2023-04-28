@@ -1,6 +1,7 @@
 import React from 'react'
 import p1img from "../assets/images/p1.png";
 import { closeIcon, jother, searchBig } from '../Utils/tools';
+import Leftchat from './Leftchat';
 
 function Chatview({handlechatviewclose, handlechatresoursclick}) {
   return (
@@ -25,6 +26,9 @@ function Chatview({handlechatviewclose, handlechatresoursclick}) {
                     {jother}
                 </div>
             </div>
+        </div>
+        <div className="chatviewwrapper">
+            <Leftchat message="Hello, we have a meeting by 10" msgtime="11:45 PM" />
         </div>
     </div>
   )
