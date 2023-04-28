@@ -4,6 +4,7 @@ import Dashboardlayout from "../components/Dashboardlayout";
 import { useLocation } from "react-router-dom";
 import Tabmessage from "../components/Tabmessage";
 import Chathome from "../components/Chathome";
+import Addtaskscard from "../components/Addtaskscard";
 
 function Chat() {
   const location = useLocation();
@@ -38,6 +39,8 @@ function Chat() {
       {!rightbartab && (
         <Tabmessage tabmessage="Click on chat to view message" />
       )}
+
+<Addtaskscard />
     </Dashboardlayout>
   );
 }
