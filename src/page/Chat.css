@@ -266,7 +266,7 @@
 }
 
 .lcmmsgtime {
-  padding-left: auto;
+ text-align: right;
   color: #464d57;
   padding-top: 5px;
   font-weight: 500;
