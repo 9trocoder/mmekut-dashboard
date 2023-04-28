@@ -244,9 +244,9 @@
   border-radius: 8px;
   right: 0;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   background-color: #fff;
-  padding: 5px 8px;
+  padding: 8px 10px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
