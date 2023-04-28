@@ -9,6 +9,7 @@ import Tabmessage from "../components/Tabmessage";
 import Homepagecard from "../components/Homepagecard";
 import HomepageTaskDetails from "../components/HomepageTaskDetails";
 import Commentcard from "../components/Commentcard";
+import Addtaskscard from "../components/Addtaskscard";
 
 function Homepage() {
   const location = useLocation();
@@ -72,6 +73,8 @@ function Homepage() {
       {alternatetab && (
         <Commentcard handleCloseComment={() => setAlternatetab(false)} />
       )}
+
+      <Addtaskscard />
     </Dashboardlayout>
   );
 }

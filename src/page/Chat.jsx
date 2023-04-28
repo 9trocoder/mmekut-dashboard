@@ -36,7 +36,7 @@ function Chat() {
         }}
       />
       {!rightbartab && (
-        <Tabmessage tabmessage="Click on task title to view details" />
+        <Tabmessage tabmessage="Click on chat to view message" />
       )}
     </Dashboardlayout>
   );
