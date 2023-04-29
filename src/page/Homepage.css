@@ -1432,6 +1432,31 @@
   cursor: pointer;
 }
 
+.addtcbcfor {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.addtcbcforproject {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.addtcbforprojectadd {
+  border: 1px solid #9a9fbf;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
 .addtaskcategoryitems {
   padding: 6px 8px;
   border: none;
