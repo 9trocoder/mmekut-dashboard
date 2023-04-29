@@ -1457,6 +1457,13 @@
 
 }
 
+.addtcbcforprojecttitle {
+  font-size: 12px;
+  line-height: 1;
+  color:#2229;
+  font-weight: 400;
+}
+
 .addtaskcategoryitems {
   padding: 6px 8px;
   border: none;
