@@ -3,9 +3,7 @@ import {
   arrowright,
   chatpeople,
   chatpeoplelist,
-  deliveredIcon,
   jother,
-  searchBig,
   searchIcon,
 } from "../Utils/tools";
 

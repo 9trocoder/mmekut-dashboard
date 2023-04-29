@@ -1,4 +1,5 @@
 import React from "react";
+import { closeIcon, closeicon } from "../Utils/tools";
 
 function Addtaskscard() {
   const addtaskicon = (
@@ -24,6 +25,26 @@ function Addtaskscard() {
           {addtaskicon}
           New task
         </button>
+
+        <div className="addtakscardoverlay" />
+        <div className="addtakscardbody">
+          <div className="addtakscardbodycnt">
+            <div className="addtcbctop">
+              <div className="addtcbctopleft">
+                <textarea
+                rows={1}
+                  type="text"
+                  autoFocus={true}
+                  placeholder="Enter task name"
+                  className="addtcbctopletinput"
+                />
+              </div>
+              <div className="addtcbctopright">
+                <div className="addtcbctoprightclosebtn">{closeicon}</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

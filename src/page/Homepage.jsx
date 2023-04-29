@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 
 import "./Homepage.css";
 import Dashboardlayout from "../components/Dashboardlayout";
-import Workspaceonboarding from "../components/Workspaceonboarding";
 import Calendarcard from "../components/Calendarcard";
 import Tabmessage from "../components/Tabmessage";
 import Homepagecard from "../components/Homepagecard";
@@ -16,7 +15,6 @@ function Homepage() {
   const [alternatetab, setAlternatetab] = useState(false);
   const [rightbartab, setRightbartab] = useState(false);
   const [showCalendar, setShowCalendar] = useState(false);
-  const [showworkspaceonboarding, setshowworkspaceonboarding] = useState(false);
   const [shownav, setshownav] = useState("");
   const [homearrow, sethomearrow] = useState("");
 
