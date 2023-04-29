@@ -32,16 +32,19 @@ function Addtaskscard() {
             <div className="addtcbctop">
               <div className="addtcbctopleft">
                 <textarea
-                rows={1}
+                  rows={1}
                   type="text"
                   autoFocus={true}
-                  placeholder="Enter task name"
+                  placeholder="Make a summary of your task..."
                   className="addtcbctopletinput"
                 />
               </div>
               <div className="addtcbctopright">
                 <div className="addtcbctoprightclosebtn">{closeicon}</div>
               </div>
+            </div>
+            <div className="addtcbcfor">
+              <button className="addtbcfor">Space</button>
             </div>
           </div>
         </div>

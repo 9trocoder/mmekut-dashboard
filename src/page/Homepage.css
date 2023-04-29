@@ -1428,6 +1428,33 @@
   margin-left: auto;
 }
 
+.addtcbctoprightclosebtn {
+  cursor: pointer;
+}
+
+.addtaskcategoryitems {
+  padding: 6px 8px;
+  border: none;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.btna {
+  color: #0184fb;
+  background-color: #0182fb15;
+}
+
+.btnb {
+  color: #27ae60;
+  background-color: #27ae6015;
+}
+
+.btnc {
+  color: #9b62fa;
+  background-color: #9b62fa15;
+}
 @media screen and (max-width: 1440px) {
   /* .hmthldone label {
      display: none; 
