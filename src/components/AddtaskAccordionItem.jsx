@@ -40,7 +40,7 @@ function AddtaskAccordionItem({ list, active, onToggle }) {
           {showaddcard && (
             <input
               type='text'
-              placeholder='Create a new Card'
+              placeholder='Enter card name'
               className='showaccordiontextfill'
             />
           )}

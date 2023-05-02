@@ -1482,7 +1482,7 @@
   box-shadow: 0 1px 10px #00000040;
   animation: dropdownMenuAnimation 0.03s ease-in forwards;
   border-radius: 8px;
-  padding: 12px;
+  padding: 7px;
 }
 
 .addtcbforprojectadd:hover > .addtcbforcnt,
@@ -1508,7 +1508,7 @@
   display: flex;
   width: 100%;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   white-space: nowrap;
   background-color: #fff;
   height: 30px;
@@ -1529,7 +1529,7 @@
   border: none;
   width: 100%;
   cursor: pointer;
-  padding: 0 12px 0 20px;
+  padding: 0 12px 0 30px;
 }
 
 .sabtop {
@@ -1554,7 +1554,7 @@
   height: 28px;
   color: #111;
   padding: 0px 15px;
-  font-size: 13px;
+  font-size: 12px;
   border-radius: 3px;
   font-weight: 400;
   outline: none;
@@ -1566,7 +1566,7 @@
 .actitle,
 .showaccordionlistitem,
 .sabtop p {
-  font-size: 13px;
+  font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
