@@ -39,14 +39,6 @@ function Addtaskscard() {
         },
       ],
     },
-    {
-      id: 2,
-      title: "Web development",
-      cards: [
-        { id: 1, title: "Login page" },
-        { id: 2, title: "sign up page" },
-      ],
-    },
   ];
 
   return (
