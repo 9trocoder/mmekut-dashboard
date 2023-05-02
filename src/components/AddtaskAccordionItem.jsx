@@ -1,6 +1,7 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 function AddtaskAccordionItem({ list, active, onToggle }) {
+  const [showaddcard, setshowaddcard] = useState(false);
   const { title, cards } = list;
   const contentEl = useRef();
 
@@ -23,15 +24,26 @@ function AddtaskAccordionItem({ list, active, onToggle }) {
       >
         <div className='showaccordion'>
           {cards.map((lst, index) => (
-            <li className='showaccordionlist' key={index}>
+            <button className='showaccordionlist' key={index}>
               <p className='showaccordionlistitem'>{lst.title}</p>
-            </li>
+            </button>
           ))}
-          <input
-            type='text'
-            placeholder='Create a new Card'
-            className='showaccordiontextfill'
-          />
+
+          <div className='showaccordionbutton'>
+            {!showaddcard && (
+              <button onClick={() => setshowaddcard(true)} className='sabtop'>
+                <span>+</span>
+                <p className='actitle'>Create a new card</p>
+              </button>
+            )}
+          </div>
+          {showaddcard && (
+            <input
+              type='text'
+              placeholder='Create a new Card'
+              className='showaccordiontextfill'
+            />
+          )}
         </div>
       </div>
     </li>

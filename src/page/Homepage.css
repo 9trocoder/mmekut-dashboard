@@ -1387,7 +1387,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 
 .addtakscardbodycnt {
@@ -1445,14 +1444,10 @@
   gap: 10px;
 }
 
-
-
-
-
 .addtcbcforprojecttitle {
   font-size: 12px;
   line-height: 1;
-  color:#2229;
+  color: #2229;
   font-weight: 400;
 }
 
@@ -1465,7 +1460,6 @@
   border-radius: 5px;
 }
 
-
 .addtcbforprojectadd {
   border: 1px solid #9a9fbf;
   width: 30px;
@@ -1476,23 +1470,29 @@
   justify-content: center;
   cursor: pointer;
   position: relative;
-
 }
 
-
 .addtcbforcnt {
+  display: none;
   position: absolute;
-  top: 40px;
-  width: 250px;
+  top: 10px;
+  width: 300px;
   left: 0px;
   background-color: #fff;
   box-shadow: 0 1px 10px #00000040;
-  animation: dropdownMenuAnimation .03s ease-in forwards;
+  animation: dropdownMenuAnimation 0.03s ease-in forwards;
   border-radius: 8px;
   padding: 12px;
 }
 
+.addtcbforprojectadd:hover > .addtcbforcnt,
+.addtcbforprojectadd:focus > .addtcbforcnt {
+  display: flex;
+  width: 300px;
+}
+
 .addtchcaccordingcnt {
+  width: 100%;
   list-style: none;
 }
 
@@ -1501,27 +1501,72 @@
   overflow: hidden;
 }
 .accordion_show.open {
-  height: auto;
+  height: max-content;
 }
 
 .acbutton {
   display: flex;
   width: 100%;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   white-space: nowrap;
   background-color: #fff;
   height: 30px;
   border: none;
   font-family: inherit;
-
+  margin-bottom: 5px;
+  padding: 0 5px;
+  cursor: pointer;
 }
 
-.acbutton:hover {
-  background-color: #0182fb;
+.showaccordionlist {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  font-family: inherit;
+  white-space: nowrap;
+  background-color: #fff;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  padding: 0 12px 0 20px;
 }
 
-.actitle, .showaccordionlistitem {
+.sabtop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 28px;
+  font-family: inherit;
+  white-space: nowrap;
+  background-color: #fff;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  padding: 0 12px 0 20px;
+}
+
+.showaccordiontextfill {
+  width: 100%;
+  margin-top: 5px;
+  font-family: inherit;
+  border: 1px solid #0184fb;
+  height: 28px;
+  color: #292d34;
+  padding: 0px 15px;
+  font-size: 13px;
+  border-radius: 3px;
+  color: #292d34;
+  font-weight: 400;
+  outline: none;
+}
+
+.showaccordiontextfill::placeholder {
+  color: #292d34;
+}
+.actitle,
+.showaccordionlistitem,
+.sabtop p {
   font-size: 13px;
   white-space: nowrap;
   overflow: hidden;
@@ -1533,19 +1578,53 @@
 
 .showaccordion {
   background-color: #fff;
+  margin-bottom: 10px;
 }
 
+.acbutton:focus > .actitle,
+.sabtop:focus > .actitle {
+  color: #fff;
+}
 
+.acbutton:hover {
+  border-radius: 3px;
+  background-color: #e9ebf0;
+  color: #2a2e34 !important;
+}
+.acbutton:focus {
+  background-color: #0184fb !important;
+  border-radius: 3px;
+  color: #fff !important;
+}
 
-.acbutton:hover, .showaccordionlist:hover, .acbutton:focus, .showaccordionlist:focus {
+.showaccordionlist:hover {
+  border-radius: 3px;
+  background-color: #e9ebf0;
+  color: #2a2e34 !important;
+}
+
+.showaccordionlist:focus {
   background-color: #0184fb;
+  border-radius: 3px;
+  color: #fff;
 }
 
-.showaccordionlistitem {
-  height: 28px;
-  padding: 0 12px 0 20px;
-  cursor: pointer;
+.sabtop:hover {
+  border-radius: 3px;
+  background-color: #e9ebf0;
+  color: #2a2e34 !important;
 }
+
+.sabtop:focus {
+  background-color: #0184fb;
+  border-radius: 3px;
+  color: #fff !important;
+}
+
+.showaccordionlist:focus > .showaccordionlistitem {
+  color: #fff;
+}
+
 .btna {
   color: #0184fb;
   background-color: #0182fb15;
