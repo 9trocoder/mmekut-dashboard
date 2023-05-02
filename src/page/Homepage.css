@@ -1392,10 +1392,10 @@
 
 .addtakscardbodycnt {
   width: 580px;
-  max-height: 510px;
+  height: 510px;
   overflow: auto;
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: 0px;
   padding: 20px;
 }
 
@@ -1445,17 +1445,9 @@
   gap: 10px;
 }
 
-.addtcbforprojectadd {
-  border: 1px solid #9a9fbf;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
 
-}
+
+
 
 .addtcbcforprojecttitle {
   font-size: 12px;
@@ -1473,6 +1465,87 @@
   border-radius: 5px;
 }
 
+
+.addtcbforprojectadd {
+  border: 1px solid #9a9fbf;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+
+}
+
+
+.addtcbforcnt {
+  position: absolute;
+  top: 40px;
+  width: 250px;
+  left: 0px;
+  background-color: #fff;
+  box-shadow: 0 1px 10px #00000040;
+  animation: dropdownMenuAnimation .03s ease-in forwards;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.addtchcaccordingcnt {
+  list-style: none;
+}
+
+.accordion_show {
+  height: 0;
+  overflow: hidden;
+}
+.accordion_show.open {
+  height: auto;
+}
+
+.acbutton {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  background-color: #fff;
+  height: 30px;
+  border: none;
+  font-family: inherit;
+
+}
+
+.acbutton:hover {
+  background-color: #0182fb;
+}
+
+.actitle, .showaccordionlistitem {
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  font-family: inherit;
+  color: #292d34;
+}
+
+.showaccordion {
+  background-color: #fff;
+}
+
+
+
+.acbutton:hover, .showaccordionlist:hover, .acbutton:focus, .showaccordionlist:focus {
+  background-color: #0184fb;
+}
+
+.showaccordionlistitem {
+  height: 28px;
+  padding: 0 12px 0 20px;
+  cursor: pointer;
+}
 .btna {
   color: #0184fb;
   background-color: #0182fb15;
