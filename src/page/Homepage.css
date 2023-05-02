@@ -1552,11 +1552,10 @@
   font-family: inherit;
   border: 1px solid #0184fb;
   height: 28px;
-  color: #292d34;
+  color: #111;
   padding: 0px 15px;
   font-size: 13px;
   border-radius: 3px;
-  color: #292d34;
   font-weight: 400;
   outline: none;
 }
@@ -1573,7 +1572,7 @@
   text-overflow: ellipsis;
   font-weight: 400;
   font-family: inherit;
-  color: #292d34;
+  color: #111;
 }
 
 .showaccordion {
@@ -1858,6 +1857,10 @@
     padding: 0px 20px 0px 20px;
     justify-content: space-between;
     border-bottom: 1px solid #e9ebf0;
+  }
+
+  .addtcbforcnt {
+    width: 250px !important;
   }
 }
 
