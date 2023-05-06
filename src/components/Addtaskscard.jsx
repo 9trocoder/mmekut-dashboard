@@ -4,6 +4,7 @@ import AddtaskAccordionItem from "./AddtaskAccordionItem";
 
 function Addtaskscard() {
   const [clicked, setClicked] = useState("0");
+  const [showfor, setshowfor] = useState(false);
   const handleToggle = (index) => {
     if (clicked === index) {
       return setClicked("0");
@@ -70,20 +71,30 @@ function Addtaskscard() {
               <div className='addtcbcforproject'>
                 <p className='addtcbcforprojecttitle'>For</p>
                 <div className='addtcbforprojectadd'>
-                  {addtaskicon}
-
-                  <div className='addtcbforcnt'>
-                    <ul className='addtchcaccordingcnt'>
-                      {addtaskaccordlist.map((list, index) => (
-                        <AddtaskAccordionItem
-                          onToggle={() => handleToggle(index)}
-                          key={index}
-                          list={list}
-                          active={clicked === index}
-                        />
-                      ))}
-                    </ul>
+                  <div className='' onClick={() => setshowfor(true)}>
+                    {addtaskicon}
                   </div>
+
+                  {showfor && (
+                    <>
+                      <div
+                        className='addtcbforcntoverlay'
+                        onClick={() => setshowfor(false)}
+                      />
+                      <div className='addtcbforcnt'>
+                        <ul className='addtchcaccordingcnt'>
+                          {addtaskaccordlist.map((list, index) => (
+                            <AddtaskAccordionItem
+                              onToggle={() => handleToggle(index)}
+                              key={index}
+                              list={list}
+                              active={clicked === index}
+                            />
+                          ))}
+                        </ul>
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
               <div className='addtcbcforproject'>
