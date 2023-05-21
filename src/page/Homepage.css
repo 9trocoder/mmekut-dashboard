@@ -1531,7 +1531,7 @@
 }
 
 .addtcdescriptioninput:focus {
-  outline: 1px solid #0184fb;
+  outline: 1px solid #0184fb70;
   border: none;
 }
 
