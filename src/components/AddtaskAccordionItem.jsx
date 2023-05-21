@@ -8,7 +8,6 @@ function AddtaskAccordionItem({ list, active, onToggle }) {
   return (
     <li className={`accordion_item ${active ? "active" : ""}`}>
       <button className='acbutton' onClick={onToggle}>
-        {" "}
         <span className='accontrol'>{active ? "-" : "+"}</span>
         <p className='actitle'>{title}</p>
       </button>

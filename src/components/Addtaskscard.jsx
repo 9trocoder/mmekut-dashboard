@@ -76,6 +76,7 @@ function Addtaskscard() {
                       onClick={() => {
                         setshowfor(false);
                         setaddtaskshow(false);
+                        setClicked("0");
                       }}
                     >
                       {closeicon}
@@ -95,7 +96,10 @@ function Addtaskscard() {
                       <>
                         <div
                           className='addtcbforcntoverlay'
-                          onClick={() => setshowfor(false)}
+                          onClick={() => {
+                            setshowfor(false);
+                            setClicked("0");
+                          }}
                         />
                         <div className='addtcbforcnt'>
                           <ul className='addtchcaccordingcnt'>
