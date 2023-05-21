@@ -6,6 +6,7 @@ import ErrorPage from "./components/error-page";
 import Loginpage from "./page/Loginpage";
 import Signuppage from "./page/Signuppage";
 import Chat from "./page/Chat";
+import Documents from "./page/Documents";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
   {
     path: "/chat",
     element: <Chat />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/document",
+    element: <Documents />,
     errorElement: <ErrorPage />,
   },
 ]);

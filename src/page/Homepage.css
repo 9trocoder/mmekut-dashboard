@@ -35,6 +35,29 @@
   border-right: 3px solid #0184fb;
 }
 
+.navbar__headerextra {
+  border-top: 1px solid #e3e7f7;
+  margin-top: 30px;
+}
+
+.navbar-headerextraitems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbarheaderextraactive {
+  background-color: #f2faff;
+}
+
+.navbar-headerextraitems:hover {
+  background-color: #f6f7f9;
+}
+
 .page-content {
   display: flex;
   flex-direction: column;
