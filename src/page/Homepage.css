@@ -1367,6 +1367,10 @@
   background-color: #0184fb;
 }
 
+.addtaskcardbtn svg {
+  fill: #fff;
+}
+
 .addtakscardoverlay {
   position: fixed;
   z-index: 52;
@@ -1439,6 +1443,7 @@
 }
 
 .addtcbcforproject {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1470,6 +1475,10 @@
   justify-content: center;
   cursor: pointer;
   position: relative;
+}
+
+.addtcbforprojectadd svg {
+  fill: #9a9fbf;
 }
 
 .addtcbforcntoverlay {
