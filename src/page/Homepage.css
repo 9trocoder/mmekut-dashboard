@@ -1505,7 +1505,34 @@
   padding: 7px;
 }
 
+.addtcdescription {
+  width: 100%;
+  margin: 20px 0;
+}
 
+.addtcdescriptioninput {
+  width: 100%;
+  font-family: inherit;
+  min-height: 100px;
+  height: 100px;
+  word-break: break-word;
+  word-wrap: break-word;
+  font-size: 13px;
+  font-weight: 400;
+  color: #111;
+  border-radius: 6px;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid #9a9fbf;
+}
+
+.addtcdescriptioninput::placeholder {
+  color: #9a9fbf;
+}
+
+.addtcdescriptioninput:focus {
+  outline: 1px solid #0184fb;
+}
 
 .addtchcaccordingcnt {
   width: 100%;

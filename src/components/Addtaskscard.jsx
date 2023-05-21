@@ -123,6 +123,14 @@ function Addtaskscard() {
                     </div>
                   </div>
                 </div>
+                <div className='addtcdescription'>
+                    <textarea
+                      rows={5}
+                      type='text'
+                      placeholder='Add a detailed description...'
+                      className='addtcdescriptioninput'
+                    />
+                </div>
               </div>
             </div>
           </>
