@@ -1705,6 +1705,42 @@
   color: #9b62fa;
   background-color: #9b62fa15;
 }
+
+.homeheaderright {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.homeheaderright button {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 2px 10px;
+  cursor: pointer;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;border-radius: 8px;
+}
+
+.homeheaderrightbtnactive {
+  color: #0184fb;
+  background-color: #0182fb15;
+  
+}
+
+.homeheaderrightbtnnotactive {
+  color: #111;
+  background-color: transparent;
+
+}
+
+.homeheaderrightbtnnotactive:hover {
+  background-color: #e9ebf0;
+}
+
 @media screen and (max-width: 1440px) {
   /* .hmthldone label {
      display: none; 

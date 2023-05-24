@@ -38,7 +38,15 @@ function Documenthome({ homearrow, handledisplay }) {
 
         <div className='homeheaderright'>
           {documentheaderbtnlist.map((dhbtnlist, index) => (
-            <button className='homeheaderrightbtn' key={index}>
+            <button
+              className={
+                activeheaderbtn === dhbtnlist.id
+                  ? "homeheaderrightbtnactive"
+                  : "homeheaderrightbtnnotactive"
+              }
+              key={index}
+              onClick={() => setactiveheaderbtn(dhbtnlist.id)}
+            >
               {dhbtnlist.title}
             </button>
           ))}
