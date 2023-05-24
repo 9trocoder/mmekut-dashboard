@@ -1725,12 +1725,15 @@
   border: none;border-radius: 8px;
 }
 
-.homeheaderrightbtnactive, .activecatbtn {
+.homeheaderrightbtnactive{
   color: #0184fb;
   background-color: #0182fb15;
   
 }
-
+.activecatbtn {
+  color: #0184fb;
+  background-color: transparent;
+}
 .homeheaderrightbtnnotactive, .notactivecatbtn {
   color: #9a9fbf;
   background-color: transparent;
@@ -1742,10 +1745,11 @@
 }
 
 .homesecheader {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 60px;
+  padding: 5px 0;
 }
 
 .homesecheader button {
@@ -1755,7 +1759,6 @@
   justify-content: center;
   font-size: 12px;
   font-weight: 500;
-  padding: 5px 10px;
   white-space: nowrap;
   height: 35px;
   border: none;
