@@ -1725,13 +1725,13 @@
   border: none;border-radius: 8px;
 }
 
-.homeheaderrightbtnactive {
+.homeheaderrightbtnactive, .activecatbtn {
   color: #0184fb;
   background-color: #0182fb15;
   
 }
 
-.homeheaderrightbtnnotactive {
+.homeheaderrightbtnnotactive, .notactivecatbtn {
   color: #111;
   background-color: transparent;
 
@@ -1739,6 +1739,26 @@
 
 .homeheaderrightbtnnotactive:hover {
   background-color: #e9ebf0;
+}
+
+.homesecheader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homesecheader button {
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  padding: 5px 10px;
+  white-space: nowrap;
+  height: 30px;
+  border: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1440px) {
