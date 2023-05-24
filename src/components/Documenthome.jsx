@@ -76,6 +76,13 @@ function Documenthome({ homearrow, handledisplay }) {
             {dcblist.title}
           </button>
         ))} */}
+
+      <input type="text" placeholder="Search notes" className="homesecsearch" />
+
+      <div className="homesecright">
+        <button className="homesecrightall">All</button>
+      </div>
+
       </div>
     </div>
   );

@@ -1744,7 +1744,7 @@
   background-color: #e9ebf0;
 }
 
-.homesecheader {
+/* .homesecheader {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1763,7 +1763,7 @@
   height: 35px;
   border: none;
   cursor: pointer;
-}
+} */
 
 @media screen and (max-width: 1440px) {
   /* .hmthldone label {
