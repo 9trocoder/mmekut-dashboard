@@ -1,5 +1,5 @@
 import React from "react";
-import { arrowright } from "../Utils/tools";
+import { arrowright, foldericon } from "../Utils/tools";
 import { useState } from "react";
 
 function Documenthome({ homearrow, handledisplay }) {
@@ -79,10 +79,11 @@ function Documenthome({ homearrow, handledisplay }) {
 
       <input type="text" placeholder="Search notes" className="homesecsearch" />
 
-      <div className="homesecright">
-        <button className="homesecrightall">All</button>
-      </div>
+     
 
+      </div> <div className="homesecright">
+        <button className="homesecrightall">All</button>
+        <button className="homesecrightfolder">{foldericon}</button>
       </div>
     </div>
   );
