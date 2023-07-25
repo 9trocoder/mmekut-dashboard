@@ -16,11 +16,15 @@ import {
   homeIconNotActive,
   homeTextActive,
   homeTextNotActive,
+  meetTextActive,
+  meetTextNotActive,
   notificationActive,
   notificationNotActive,
   notificationTextActive,
   notificationTextNotActive,
   settingsicon,
+  spacesTextActive,
+  spacesTextNotActive,
 } from "../Utils/tools";
 import mmekutlogo from "../assets/Svg/mmekutlogo.svg";
 import p2img from "../assets/images/p2.png";
@@ -115,6 +119,24 @@ function Dashboardlayout({
 
           <div className='navbar__headerextra'>
             <Link
+              to='/spaces'
+              className={`navbar-headerextraitems ${
+                linkaddress === "/spaces" && "navbarheaderextraactive"
+              }`}
+            >
+              {linkaddress === "/spaces" ? (
+                <>
+                  <label>{spacesTextActive}</label>
+                  {arrowrightactive}
+                </>
+              ) : (
+                <>
+                  <label>{spacesTextNotActive}</label>
+                  {arrowrightnotactive}
+                </>
+              )}
+            </Link>
+            <Link
               to='/document'
               className={`navbar-headerextraitems ${
                 linkaddress === "/document" && "navbarheaderextraactive"
@@ -129,6 +151,22 @@ function Dashboardlayout({
                 <>
                   <label>{documentTextNotActive}</label>
                   {arrowrightnotactive}
+                </>
+              )}
+            </Link>
+            <Link
+              to='/meet'
+              className={`navbar-headerextraitems dmeetst ${
+                linkaddress === "/meet" && "navbarheaderextraactive"
+              }`}
+            >
+              {linkaddress === "/meet" ? (
+                <>
+                  <label>{meetTextActive}</label>
+                </>
+              ) : (
+                <>
+                  <label>{meetTextNotActive}</label>
                 </>
               )}
             </Link>

@@ -54,7 +54,7 @@ function Loginpage() {
             </div>
           </div>
           <button className="login-btn" onClick={() => navigate("/home")}>
-            Log In
+            Sign in
           </button>
           <div className="donhaveaccount">
             <p>Don't have an account?</p>

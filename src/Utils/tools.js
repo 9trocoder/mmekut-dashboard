@@ -1214,6 +1214,21 @@ export const documentTextNotActive = (
   <p className='text__not-active'>Documents</p>
 );
 
+export const spacesTextActive = <p className="text__active">
+  Spaces
+</p>
+
+export const spacesTextNotActive = (
+  <p className="text__not-active">Spaces</p>
+)
+
+export const meetTextActive = <p className="text__active">
+  Meet
+</p>
+
+export const meetTextNotActive = (
+  <p className="text__not-active">Meet</p>
+)
 export const addTaskIcon = (
   <svg
     width='13'

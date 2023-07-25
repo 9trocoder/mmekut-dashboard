@@ -48,6 +48,11 @@
   padding: 10px 15px;
   cursor: pointer;
   text-decoration: none;
+  border-bottom: 1px solid #e3e7f7;
+}
+
+.dmeetst {
+  border-bottom: none !important;
 }
 
 .navbarheaderextraactive {
