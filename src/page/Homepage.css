@@ -1518,7 +1518,6 @@
   z-index: 54;
 }
 
-
 .addtcbforcnt {
   display: flex;
   position: absolute;
@@ -1551,7 +1550,7 @@
   border-radius: 6px;
   background-color: transparent;
   padding: 10px;
-  border: .5px solid #9a9fbf70;
+  border: 0.5px solid #9a9fbf70;
 }
 
 .addtcdescriptioninput::placeholder {
@@ -1727,29 +1726,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;border-radius: 8px;
+  border: none;
+  border-radius: 8px;
 }
 
-.homeheaderrightbtnactive{
+.homeheaderrightbtnactive {
   color: #0184fb;
   background-color: #0182fb15;
-  
 }
 .activecatbtn {
   color: #0184fb;
   background-color: transparent;
 }
-.homeheaderrightbtnnotactive, .notactivecatbtn {
+.homeheaderrightbtnnotactive,
+.notactivecatbtn {
   color: #9a9fbf;
   background-color: transparent;
-
 }
 
 .homeheaderrightbtnnotactive:hover {
   background-color: #e9ebf0;
 }
 
- .homesecheader {
+.homesecheader {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1770,8 +1769,8 @@
 
 .homesecsearch:focus {
   outline: 1px solid #0182fb15;
-  border:  1px solid transparent;
-} 
+  border: 1px solid transparent;
+}
 
 .homesecright {
   display: flex;
@@ -1939,6 +1938,7 @@
     display: flex;
   }
   .left-bar {
+    top: 15px;
     bottom: 15px;
     left: 5px;
     display: none;
@@ -1955,7 +1955,7 @@
     animation: dropdownMenuAnimation 0.03s ease-in forwards;
     pointer-events: all;
     border-right: none;
-    height: 30rem;
+    /* height: 30rem; */
   }
 
   .nbiciactive {
