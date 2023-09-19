@@ -1,7 +1,8 @@
 .logincnt {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
 }
 
 .loginleft {
@@ -33,14 +34,19 @@
   line-height: 21px;
 }
 
+.logincheck {
+  max-width: 500px;
+  margin: 0 auto;
+}
 .loginright {
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-  position: relative;
+  position: absolute;
   padding: 0 20px;
+  background-color: #fff;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
 }
 
 .loginrighttop p {
@@ -49,7 +55,7 @@
   font-size: 24px;
   font-weight: 800;
   line-height: 28.8px;
-  margin: 0px 0px 16px;
+  margin-bottom: 5px;
 }
 
 .loginrighttop label {
@@ -85,7 +91,8 @@
   align-items: center;
   padding: 1px 10px 1px 10px;
   gap: 15px;
-  color: #8a94a6;width: 400px;
+  color: #8a94a6;
+  width: 400px;
 }
 
 .inputcontainer input {
@@ -176,8 +183,7 @@
 .byclickbelow {
   font-size: 10px;
   line-height: 12px;
-  color:#8a94a6;
-
+  color: #8a94a6;
 }
 
 .byclickbelow span {
@@ -194,9 +200,7 @@
   cursor: pointer;
 }
 
-.logintopp {
-  display: none;
-}
+
 
 .forgotpasswordlabel {
   font-size: 12px;
@@ -205,8 +209,22 @@
   cursor: pointer;
 }
 
+.logintopp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0px;
+}
+
+.orsignuplg {
+  text-align: center;
+  font-size: 12px;
+
+}
+
+
 @media screen and (max-width: 800px) {
-  .signupbuttontop{
+  .signupbuttontop {
     display: none;
   }
   .logincnt {
@@ -228,12 +246,6 @@
 
   .inputcontainer {
     width: 100%;
-  }
-  .logintopp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 32px 0px;
   }
 
   .loginrighttop {
